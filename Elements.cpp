@@ -1,13 +1,12 @@
-#include <iostream>
-#include <array>
 #include <vector>
-#include <stack>
 #include <memory>
 #include <curses.h>
 
 using std::vector;
 using std::unique_ptr;
 using std::make_unique;
+using std::shared_ptr;
+using std::make_shared;
 
 //Constants 
 //Keys
@@ -37,6 +36,19 @@ public:
 	virtual int getX() { return x; }
 
 	virtual char getSymbol() { return symbol; }
+
+	virtual void setPosition(int newY, int newX) {
+		y = newY;
+		x = newX;
+	}
+
+	virtual void setX(int newX) {
+		x = newX;
+	}
+
+	virtual void setY(int newY) {
+		y = newY;
+	}
 };
 
 // nonstatic, moving element for moving objects
@@ -45,7 +57,8 @@ protected:
 	MovingElement(int y, int x, char symbol, bool passable, Height height)
 		: GameElement(y, x, symbol, passable, height) {}
 
-	virtual void move(int dx, int dy) {
+public:
+	virtual void move(int dy, int dx) {
 		y += dy;
 		x += dx;
 	}
@@ -79,28 +92,4 @@ class Tile : public GameElement {
 public:
 	Tile(int y, int x)
 		: GameElement(y, x, '.', true, Height::GROUND) {}
-};
-
-// backend modeling classes
-class Pixel {
-private:
-	int y;
-	int x;
-	// vector to be treated as a stack
-	vector<unique_ptr<GameElement>> elemStack;
-public:
-	Pixel(int y, int x)
-		: y(y), x(x) {}
-
-	char getSymbol() {
-		return elemStack.back()->getSymbol();
-	}
-
-	void addElem(unique_ptr<GameElement> elem) {
-		elemStack.push_back(std::move(elem));
-	}
-
-	void insertElement(Height height) {
-		// TODO: deal with multiple items on same level
-	}
 };
