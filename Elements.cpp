@@ -1,12 +1,17 @@
-#include <vector>
+﻿#include <vector>
+#include <map>
+#include <string>
 #include <memory>
 #include <curses.h>
 
 using std::vector;
+using std::map;
+using std::string;
 using std::unique_ptr;
-using std::make_unique;
 using std::shared_ptr;
+using std::make_unique;
 using std::make_shared;
+using std::make_pair;
 
 //Constants 
 //Keys
@@ -24,12 +29,12 @@ protected:
 	int y;
 	int x;
 	char symbol;
-	bool passable;
+	bool noclip;
 	Height height;
 
 	// constructor protected to prevent instantiation
-	GameElement(int y, int x, char symbol, bool passable, Height height)
-		: y(y), x(x), symbol(symbol), passable(passable), height(height) {}
+	GameElement(int y, int x, char symbol, bool noclip, Height height)
+		: y(y), x(x), symbol(symbol), noclip(noclip), height(height) {}
 public:
 	virtual int getY() { return y; }
 
@@ -51,11 +56,37 @@ public:
 	}
 };
 
+// structures and unmoving elements
+class Tile : public GameElement {
+public:
+	Tile(int y, int x)
+		: GameElement(y, x, '.', true, Height::GROUND) {}
+};
+
+// TODO: rename?
+class Placeable : public GameElement {
+protected:
+	Placeable(int y, int x, char symbol, bool noclip, Height height)
+		: GameElement(y, x, symbol, noclip, height) {}
+};
+
+class HorizontalWall : public Placeable {
+public:
+	HorizontalWall(int y, int x)
+		: Placeable(y, x, '_', false, Height::ON_GROUND) {}
+};
+
+class VerticalWall : public Placeable {
+public:
+	VerticalWall(int y, int x)
+		: Placeable(y, x, '|', false, Height::ON_GROUND) {}
+};
+
 // nonstatic, moving element for moving objects
 class MovingElement : public GameElement {
 protected:
-	MovingElement(int y, int x, char symbol, bool passable, Height height)
-		: GameElement(y, x, symbol, passable, height) {}
+	MovingElement(int y, int x, char symbol, bool noclip, Height height)
+		: GameElement(y, x, symbol, noclip, height) {}
 
 public:
 	virtual void move(int dy, int dx) {
@@ -63,6 +94,7 @@ public:
 		x += dx;
 	}
 };
+
 
 // moving, creature elements
 class Creature : public MovingElement {
@@ -81,15 +113,14 @@ protected:
 		: Creature(x, y, symbol, health) {}
 };
 
+class Editor : public MovingElement {
+public:
+	Editor(int y, int x)
+		: MovingElement(y, x, 'E', true, Height::ON_GROUND) {}
+};
+
 class Player : public Human {
 public:
 	Player(int y, int x, int health)
 		: Human(y, x, 'P', health) {}
-};
-
-// structures and unmoving elements
-class Tile : public GameElement {
-public:
-	Tile(int y, int x)
-		: GameElement(y, x, '.', true, Height::GROUND) {}
 };
