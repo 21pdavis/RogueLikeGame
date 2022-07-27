@@ -1,0 +1,3 @@
+C:\Programming\C++\GameExperiment\x64\Debug\GameExperiment.exe
+C:\Programming\C++\GameExperiment\x64\Debug\GameExperiment.vcxproj.CopyComplete
+C:\Programming\C++\GameExperiment\x64\Debug\pdcurses.dll
