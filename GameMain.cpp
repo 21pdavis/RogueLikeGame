@@ -12,20 +12,55 @@ TODOs:
 #include "Elements.hpp"
 #include "BoardOperations.hpp"
 
+//using elemBoard = std::vector<std::vector<std::unique_ptr<Pixel>>>;
+template <class T>
+using elemBoard = std::vector<std::vector<T>>;
+
 // backend modeling classes
 class Pixel {
 private:
-	// vector to be treated as a stack (used for easier access to elements in middle of stack)
-	vector<GameElement> elemStack;
-public:
-	Pixel() {}
+	int y;
+	int x;
 
-	char getSymbol() {
-		return elemStack.back().getSymbol();
+	// vector to be treated as a stack (used for easier access to elements in middle of stack)
+	std::vector<std::unique_ptr<GameElement>> elemStack;
+public:
+	Pixel(int y, int x): x(x), y(y) {}
+	
+	const int getX() const { return x; }
+
+	const int getY() const { return y; }
+
+	auto findElem(GameElement& other) {
+		// return a const reference to the iterator to the first element that matches the predicate
+		return std::find_if(elemStack.begin(), elemStack.end(), [&](const std::unique_ptr<GameElement>& elem) {
+			return *elem == other; 
+		});
 	}
 
-	void addElem(const GameElement& elem) {
-		elemStack.push_back(elem);
+	auto findElemCharMatch(const char symbols[], const size_t symbols_size) {
+		return std::find_if(elemStack.begin(), elemStack.end(), [&](const std::unique_ptr<GameElement>& elem) {
+			return std::find(symbols, symbols + symbols_size, elem->getSymbol()) != symbols + symbols_size;
+		});
+	}
+
+	void addElem(std::unique_ptr<GameElement> pElem) {
+		/*
+		 * Given a const reference to a GameElement, add it in its appropriate place on the stack by height.
+		 * In the event of GameElements of the same height, add the newer element on top of the older one.
+		 */
+		pElem->setPosition(y, x);
+		auto it = elemStack.begin();
+		for (; it != elemStack.end(); ++it) {
+			// TODO: Handle same-level elements
+			if (pElem->getHeight() > (*it)->getHeight()) {
+				elemStack.insert(it + 1, std::move(pElem));
+				return;
+			}
+		}
+		if (it == elemStack.end()) {
+			elemStack.emplace_back(std::move(pElem));
+		}
 	}
 
 	void popElem() {
@@ -35,7 +70,7 @@ public:
 
 	void removeElemAtIndex(int index) {
 		if (elemStack.size() <= 2) {
-			if (elemStack.size() == 2 && elemStack[elemStack.size() - 1].getSymbol() == 'E') {
+			if (elemStack.size() == 2 && elemStack.back()->getSymbol() == 'E') {
 				return;
 			}
 			else if (elemStack.size() < 2) {
@@ -48,94 +83,34 @@ public:
 		elemStack.erase(elemStack.begin() + index);
 	}
 
-	void removeElem(unique_ptr<GameElement> other) {
-		for (auto it = elemStack.begin(); it != elemStack.end(); it++) {
-			if (*it == other) {
-				elemStack.erase(it);
-				break;
-			}
+	void removeElem(GameElement& other) {
+		auto elemItr = findElem(other);
+		if (elemItr != elemStack.end()) {
+			elemStack.erase(elemItr);
 		}
 	}
 
-	vector<unique_ptr<GameElement>>& getElemStack() {
+	void removeElemCharMatch(const char symbols[], const size_t symbols_size) {
+		auto elemItr = findElemCharMatch(symbols, symbols_size);
+		if (elemItr != elemStack.end()) {
+			elemStack.erase(elemItr);
+		}
+	}
+
+	std::vector<std::unique_ptr<GameElement>>& getElemStack() {
 		return elemStack;
+	}
+
+	GameElement& back() const {
+		return *elemStack.back();
+	}
+
+	void erase(std::vector<std::unique_ptr<GameElement>>::iterator itr) {
+		elemStack.erase(itr);
 	}
 
 	void insertElement(Height height) {
 		// TODO: deal with multiple items on same level
-	}
-};
-
-class Map {
-private:
-	WINDOW* window;
-	// 2D vector of Pixels
-	vector<vector<Pixel>> board;
-	// inner limits of board within box
-	int height;
-	int width;
-
-	inline const Pixel& pixelAt(int y, int x) const {
-		return board[y][x];
-	}
-public:
-	Map(int height, int width, WINDOW* window)
-		: height(height - 2), width(width - 2),  window(window) {
-		// TODO: optimize? not really necessary unless many board objects are created, though,
-		//		 as this code is only executed once
-		for (int i = 0; i < height; i++) {
-			board.push_back({});
-			for (int j = 0; j < width; j++) {
-				//Pixel p;
-				//p->addElem(make_unique<Tile>(i + 1, j + 1));
-				Pixel& p = board[i].emplace_back(Pixel());
-				p.addElem(make_unique<Tile>(i + 1, j + 1));
-			}
-		}
-	}
-	
-	void addElem(int y, int x, GameElement& elem) {
-		board[y][x]->addElem(make_unique<GameElement>(elem));
-	}
-	
-	void moveElem(shared_ptr<GameElement> elem, int y, int x, int newY, int newX) {
-		// prevent out of bounds indexing of pixel array
-		if (newY < height && newX < width && newY >= 0 && newX >= 0) {
-			shared_ptr<Pixel> srcPixel = pixelAt(y, x);
-			shared_ptr<Pixel> dstPixel = pixelAt(newY, newX);
-
-			// remove element from source pixel
-			srcPixel->removeElem(elem);
-			// add element to destination pixel
-			dstPixel->addElem(elem);
-			// update placeable's awareness of its new position
-			elem->setPosition(newY, newX);
-		}
-	}
-
-	void editorRemoveAt(int y, int x) {
-		// removes second-highest element from the target stack
-		// precondition: there is an editor on top of the elemStack of the pixel
-		//				 returned by pixelAt(y, x)
-		shared_ptr<Pixel> pixel = pixelAt(y, x);
-		pixel->removeElemAtIndex(pixel->getElemStack().size() - 2);
-	}
-
-	void removeHighestElementAt(int y, int x) {
-		// retrieve elemStack from pixel at (y, x)
-		shared_ptr<Pixel> pixel = pixelAt(y, x);
-		vector<shared_ptr<GameElement>>& elemStack = pixel->getElemStack();
-		// remove
-		pixel->popElem();
-	}
-
-	void draw() {
-		for (int i = 0; i < height; i++) { // y
-			for (int j = 0; j < width; j++) { // x
-				mvwprintw(window, i + 1, j + 1, "%c", board[i][j]->getSymbol());
-			}
-		}
-		wrefresh(window);
 	}
 };
 
@@ -146,10 +121,9 @@ public:
 		running = true;
 
 		// initialize PDCurses window
-		// getmaxyx takes in references to height and variables and edits them
+		// !!height and width initialized here!! getmaxyx() takes in references to height and variables and edits them
 		getmaxyx(stdscr, height, width);
 		window = newwin(height, width, 0, 0);
-		board = this->makeElemBoard(height, width);
 
 		// set options
 		noecho(); // don't print typed characters
@@ -160,6 +134,9 @@ public:
 		// draw border in window 
 		box(window, 0, 0);
 		wrefresh(window);
+
+		// lay HxW tiles
+		initElemBoard();
 	}
 
 	bool isRunning() {
@@ -180,124 +157,132 @@ private:
 	bool running;
 	WINDOW* window;
 	// 2D vector of stack-like vectors (basically a 3D vector)
-	elemBoard<GameElement> board;
+	elemBoard<std::unique_ptr<Pixel>> board; // TODO: figure out why the template-style declaration is necessary
 	// pointer to current playable element - nullptr before spawn 
 	std::optional<std::pair<int, int>> playableCoords = std::nullopt;
 
-	elemBoard<GameElement> makeElemBoard(int height, int width) {
-		elemBoard<GameElement> board;
-		for (int y = 0; y < height - 2; ++y) {
-			for (int x = 0; x < width - 2; ++x) {
-				board[y][x].emplace_back(std::make_unique<Tile>(y, x));
+	void initElemBoard() {
+		for (int i = 0; i < height - 2; ++i) {
+			board.push_back({});
+			for (int j = 0; j < width - 2; ++j) {
+				board[i].emplace_back(std::make_unique<Pixel>(i, j));
+				board[i][j]->addElem(std::make_unique<Tile>(i, j));
 			}
 		}
-		return board;
 	}
 
 	void draw() {
-		for (int i = 0; i < height; i++) { // y
-			for (int j = 0; j < width; j++) { // x
-				std::unique_ptr<GameElement> highestElem = std::move(board[i][j].back());
-				mvwprintw(window, i + 1, j + 1, "%c", board[i][j].back()->getSymbol());
-				board[i][j].push_back(std::move(highestElem));
+		for (int i = 0; i < height - 2; i++) {
+			for (int j = 0; j < width - 2; j++) {
+				mvwprintw(window, i + 1, j + 1, "%c", board[i][j]->back().getSymbol());
 			}
 		}
 		wrefresh(window);
 	}
 	
+	Pixel& pixelAt(int y, int x) {
+		return *board[y][x];
+	}
+
 	void handleEditorAction(char key) {
-		if (currentPlayable && currentPlayable->isEditor()) {
+		if (playableCoords) {
 			switch (key) {
 			case '\\':
-				spawnElem(std::make_unique<VerticalWall>(currentPlayable->getY(), currentPlayable->getX()));
+				spawnElem(std::make_unique <VerticalWall>(playableCoords->first, playableCoords->second));
 				break;
 			case '-':
-				spawnElem(std::make_unique<HorizontalWall>(currentPlayable->getY(), currentPlayable->getX()));
+				spawnElem(std::make_unique<HorizontalWall>(playableCoords->first, playableCoords->second));
 				break;
 			case 'x':
-				editorRemoveAt(currentPlayable->getY(), currentPlayable->getX());
+				Pixel& p = pixelAt(playableCoords->first, playableCoords->second);
+				p.removeElemAtIndex(p.getElemStack().size() - 2);
 				break;
 			}
 		}
 	}
 
-	void spawnElem(std::unique_ptr<GameElement> elem) {
-		board[elem->getY()][elem->getX()].push_back(std::move(elem));
+	inline void spawnElem(std::unique_ptr<GameElement> pElem) {
+		// TODO: Consider making elems ignorant of their position
+		pixelAt(pElem->getY(), pElem->getX()).addElem(std::move(pElem));
 	}
 
-	void spawnPlayable(std::unique_ptr<Playable> playable) {
+	inline void spawnPlayable(std::unique_ptr<Playable> pElem) {
+		if (!playableCoords) {
+			playableCoords = std::make_optional<std::pair<int, int>>(Playable::d_Y, Playable::d_X);
+		}
 		playableCoords->first = Playable::d_Y;
 		playableCoords->second = Playable::d_X;
-		spawnElem(std::move(playable));
+		spawnElem(std::move(pElem));
 	}
 
-	void removeElem(int y, int x, const char symbols[], const size_t symbols_size) {
-		// TODO: confirm that symbols pointer can safely be const
-		const auto& elem = std::find_if(board[y][x].begin(), board[y][x].end(), [symbols, &symbols_size](char c) {
-			std::find(symbols, symbols + symbols_size, c) != symbols + symbols_size; 
-		});
-		
-		if (elem != board[y][x].end()) {
-			board[y][x].erase(elem);
-		}
-	}
-	
 	void removeCurrentPlayable() {
 		if (playableCoords) {
 			constexpr size_t charNum = 2;
 			char playableChars[charNum] = {'P', 'E'};
-			removeElem(playableCoords->first, playableCoords->second, playableChars, charNum);
+			pixelAt(playableCoords->first, playableCoords->second).removeElemCharMatch(playableChars, charNum);
 			playableCoords = std::nullopt;
 		}
 	}
 	
-	void moveElem(shared_ptr<GameElement> elem, int y, int x, int newY, int newX) {
-		// see https://stackoverflow.com/questions/15004517/moving-elements-from-stdvector-to-another-one
+	void moveElem(const std::pair<int&, int> yDelta, const std::pair<int&, int> xDelta) {
+		//TODO refactor to take in generic coordinate pair
 
 		// prevent out of bounds indexing of pixel array
-		if (newY < height && newX < width && newY >= 0 && newX >= 0) {
-			shared_ptr<Pixel> srcPixel = pixelAt(y, x);
-			shared_ptr<Pixel> dstPixel = pixelAt(newY, newX);
+		int newY = yDelta.first + yDelta.second;
+		int newX = xDelta.first + xDelta.second;
 
-			// remove element from source pixel
-			srcPixel->removeElem(elem);
-			// add element to destination pixel
-			dstPixel->addElem(elem);
-			// update placeable's awareness of its new position
-			elem->setPosition(newY, newX);
+		if (newY < height && newX < width && newY >= 0 && newX >= 0) {
+			Pixel& srcPixel = pixelAt(yDelta.first, xDelta.first);
+			auto elemItr = srcPixel.findElemCharMatch(SymbolSets::Playable, 2);
+			if (elemItr != srcPixel.getElemStack().end()) {
+				// get reference from old pixel and erase
+				std::unique_ptr<GameElement> playable = std::move(*elemItr);
+				srcPixel.erase(elemItr);
+
+				// move to new pixel
+
+				Pixel& dstPixel = pixelAt(newY, newX);
+				dstPixel.addElem(std::move(playable));
+			}
 		}
 	}
 
 	void handleKey(int key) {
 		switch (key) {
 		case KEY_LEFT:
-			if (currentPlayable) {
-				moveElem(currentPlayable, currentPlayable->getY(), currentPlayable->getX(),
-					currentPlayable->getY(), currentPlayable->getX() - 1);
+			if (playableCoords) {
+				moveElem(std::pair<int&, int>(playableCoords->first, 0),
+						 std::pair<int&, int>(playableCoords->second, -1));
+				playableCoords->first += 0;
+				playableCoords->second += -1;
 			}
 			break;
 		case KEY_UP:
-			if (currentPlayable) {
-				moveElem(currentPlayable, currentPlayable->getY(), currentPlayable->getX(),
-					currentPlayable->getY() - 1, currentPlayable->getX());
+			if (playableCoords) {
+				moveElem(std::pair<int&, int>(playableCoords->first, -1),
+						 std::pair<int&, int>(playableCoords->second, 0));
+				playableCoords->first += -1;
+				playableCoords->second += 0;
 			}
 			break;
 		case KEY_RIGHT:
-			if (currentPlayable) {
-				moveElem(currentPlayable, currentPlayable->getY(), currentPlayable->getX(),
-					currentPlayable->getY(), currentPlayable->getX() + 1);
+			if (playableCoords) {
+				moveElem(std::pair<int&, int>(playableCoords->first, 0),
+						 std::pair<int&, int>(playableCoords->second, 1));
+				playableCoords->first += 0;
+				playableCoords->second += 1;
 			}
 			break;
 		case KEY_DOWN:
-			if (currentPlayable) {
-				moveElem(currentPlayable, currentPlayable->getY(), currentPlayable->getX(),
-					currentPlayable->getY() + 1, currentPlayable->getX());
+			if (playableCoords) {
+				moveElem(std::pair<int&, int>(playableCoords->first, 1),
+						 std::pair<int&, int>(playableCoords->second, 0));
+				playableCoords->first += 1;
+				playableCoords->second += 0;
 			}
 			break;
 		case 'p':
-			playableCoords->first = Playable::d_Y;
-			playableCoords->second = Playable::d_X;
-			board[Playable::d_Y][Playable::d_X].emplace_back(std::make_unique<Player>());
+			spawnPlayable(std::make_unique<Player>(100));
 			break;
 		case 'e':
 			spawnPlayable(std::make_unique<Editor>());
@@ -311,7 +296,7 @@ private:
 		case 'x': // delete highest Placeable element
 			handleEditorAction(key);
 			break;
-		case KEY_ESC:
+		case static_cast<int>(Keys::KEY_ESC):
 			running = false;
 			break;
 		}

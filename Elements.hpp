@@ -1,4 +1,6 @@
-﻿#include <array>
+﻿#pragma once
+
+#include <array>
 #include <vector>
 #include <span>
 #include <stack>
@@ -10,25 +12,26 @@
 #include <algorithm>
 #include <curses.h>
 
-//using std::vector;
-//using std::stack;
-//using std::pair;
-//
-//using std::unique_ptr;
-//using std::make_unique;
-
 //Constants 
 //Keys
-constexpr int KEY_ESC = 27;
-
-template<class T>
-using elemBoard = std::vector<std::vector<std::vector<std::unique_ptr<T>>>>;
+enum class Keys {
+	KEY_ESC = 27
+};
 
 enum class Height : int {
 	GROUND = 0,
 	ON_GROUND,
 	IN_AIR
 };
+
+enum class Symbols : char {
+	Player = 'P',
+	Editor = 'E'
+};
+
+namespace SymbolSets {
+	const char Playable[2] = {'P', 'E'};
+}
 
 // static, nonmoving element for stationary objects
 class GameElement {
@@ -39,27 +42,39 @@ protected:
 	bool noclip;
 	Height height;
 
+	//GameElement(const GameElement& other) = delete;
+
 	// constructor protected to prevent instantiation
 	GameElement(int y, int x, char symbol, bool noclip, Height height)
 		: y(y), x(x), symbol(symbol), noclip(noclip), height(height) {}
 public:
-	virtual int getY() const { return y; }
+	virtual int getY() const {
+		return y;
+	}
 
-	virtual int getX() const { return x; }
-
-	virtual char getSymbol() const { return symbol; }
-
-	virtual void setPosition(int newY, int newX) {
+	virtual void setY(int newY) {
 		y = newY;
-		x = newX;
+	}
+
+	virtual int getX() const {
+		return x;
 	}
 
 	virtual void setX(int newX) {
 		x = newX;
 	}
 
-	virtual void setY(int newY) {
+	virtual char getSymbol() const {
+		return symbol;
+	}
+
+	virtual void setPosition(int newY, int newX) {
 		y = newY;
+		x = newX;
+	}
+
+	virtual int getHeight() const {
+		return static_cast<int>(height);
 	}
 
 	virtual bool operator==(const GameElement& other) const {
