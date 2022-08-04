@@ -207,11 +207,11 @@ private:
 	}
 
 	inline void spawnPlayable(std::unique_ptr<Playable> pElem) {
-		if (!playableCoords) {
-			playableCoords = std::make_optional<std::pair<int, int>>(Playable::d_Y, Playable::d_X);
-		}
-		playableCoords->first = Playable::d_Y;
-		playableCoords->second = Playable::d_X;
+		// reset current playable
+		removeCurrentPlayable();
+		playableCoords = std::make_optional<std::pair<int, int>>(Playable::d_Y, Playable::d_X);
+
+		// use generic element spawning function
 		spawnElem(std::move(pElem));
 	}
 
@@ -224,15 +224,13 @@ private:
 		}
 	}
 	
-	void moveElem(const std::pair<int&, int> yDelta, const std::pair<int&, int> xDelta) {
-		//TODO refactor to take in generic coordinate pair
-
+	void moveElem(std::pair<int, int>& origPair, const int yDelta, const int xDelta) {
 		// prevent out of bounds indexing of pixel array
-		int newY = yDelta.first + yDelta.second;
-		int newX = xDelta.first + xDelta.second;
+		int newY = origPair.first + yDelta;
+		int newX = origPair.second + xDelta;
 
 		if (newY < height && newX < width && newY >= 0 && newX >= 0) {
-			Pixel& srcPixel = pixelAt(yDelta.first, xDelta.first);
+			Pixel& srcPixel = pixelAt(origPair.first, origPair.second);
 			auto elemItr = srcPixel.findElemCharMatch(SymbolSets::Playable, 2);
 			if (elemItr != srcPixel.getElemStack().end()) {
 				// get reference from old pixel and erase
@@ -240,9 +238,12 @@ private:
 				srcPixel.erase(elemItr);
 
 				// move to new pixel
-
 				Pixel& dstPixel = pixelAt(newY, newX);
 				dstPixel.addElem(std::move(playable));
+
+				// update origPair
+				origPair.first = newY;
+				origPair.second = newX;
 			}
 		}
 	}
@@ -251,34 +252,22 @@ private:
 		switch (key) {
 		case KEY_LEFT:
 			if (playableCoords) {
-				moveElem(std::pair<int&, int>(playableCoords->first, 0),
-						 std::pair<int&, int>(playableCoords->second, -1));
-				playableCoords->first += 0;
-				playableCoords->second += -1;
+				moveElem(playableCoords.value(), 0, -1);
 			}
 			break;
 		case KEY_UP:
 			if (playableCoords) {
-				moveElem(std::pair<int&, int>(playableCoords->first, -1),
-						 std::pair<int&, int>(playableCoords->second, 0));
-				playableCoords->first += -1;
-				playableCoords->second += 0;
+				moveElem(playableCoords.value(), -1, 0);
 			}
 			break;
 		case KEY_RIGHT:
 			if (playableCoords) {
-				moveElem(std::pair<int&, int>(playableCoords->first, 0),
-						 std::pair<int&, int>(playableCoords->second, 1));
-				playableCoords->first += 0;
-				playableCoords->second += 1;
+				moveElem(playableCoords.value(), 0, 1);
 			}
 			break;
 		case KEY_DOWN:
 			if (playableCoords) {
-				moveElem(std::pair<int&, int>(playableCoords->first, 1),
-						 std::pair<int&, int>(playableCoords->second, 0));
-				playableCoords->first += 1;
-				playableCoords->second += 0;
+				moveElem(playableCoords.value(), 1, 0);
 			}
 			break;
 		case 'p':

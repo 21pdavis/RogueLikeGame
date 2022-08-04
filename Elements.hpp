@@ -42,7 +42,7 @@ protected:
 	bool noclip;
 	Height height;
 
-	//GameElement(const GameElement& other) = delete;
+	GameElement(const GameElement& other) = delete;
 
 	// constructor protected to prevent instantiation
 	GameElement(int y, int x, char symbol, bool noclip, Height height)
@@ -89,7 +89,6 @@ public:
 		: GameElement(y, x, '.', true, Height::GROUND) {}
 };
 
-// TODO: rename?
 class Placeable : public GameElement {
 protected:
 	Placeable(int y, int x, char symbol, bool noclip, Height height)
