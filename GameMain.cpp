@@ -3,14 +3,13 @@
 /*
 TODOs:
 - Passability/noclip implementation
-- Interactions between elements
-- Colors?
+- Stack bug where higher-height elements are being hidden
 - Menu
 */
 
 // TODO: create separate header(s) for constants/elements, etc.
+#include <optional>
 #include "Elements.hpp"
-#include "BoardOperations.hpp"
 
 //using elemBoard = std::vector<std::vector<std::unique_ptr<Pixel>>>;
 template <class T>
@@ -21,11 +20,12 @@ class Pixel {
 private:
 	int y;
 	int x;
+	bool passable;
 
 	// vector to be treated as a stack (used for easier access to elements in middle of stack)
 	std::vector<std::unique_ptr<GameElement>> elemStack;
 public:
-	Pixel(int y, int x): x(x), y(y) {}
+	Pixel(int y, int x): x(x), y(y), passable(false) {}
 	
 	const int getX() const { return x; }
 
@@ -49,18 +49,22 @@ public:
 		 * Given a const reference to a GameElement, add it in its appropriate place on the stack by height.
 		 * In the event of GameElements of the same height, add the newer element on top of the older one.
 		 */
+
+		// TODO revisit
+		//if (!pElem->isNoClip()) {
+		//	passable = false;
+		//}
 		pElem->setPosition(y, x);
-		auto it = elemStack.begin();
-		for (; it != elemStack.end(); ++it) {
-			// TODO: Handle same-level elements
-			if (pElem->getHeight() > (*it)->getHeight()) {
-				elemStack.insert(it + 1, std::move(pElem));
+		auto it = elemStack.rbegin();
+		for (; it != elemStack.rend(); ++it) {
+			if (pElem->getHeight() >= (*it)->getHeight()) {
+				// reverse_iterator::base() returns element "behind" (more to the right) of itself
+				elemStack.insert(it.base(), std::move(pElem));
 				return;
 			}
 		}
-		if (it == elemStack.end()) {
-			elemStack.emplace_back(std::move(pElem));
-		}
+		// insert at very front (iterator::begin()) if no element of lesser height is found
+		elemStack.insert(it.base(), std::move(pElem));
 	}
 
 	void popElem() {
@@ -143,21 +147,22 @@ public:
 		return running;
 	}
 
-	void render() {
-		int key = wgetch(window);
-		handleKey(key);
+	void run() {
+		while (running) {
+			int key = wgetch(window);
+			handleKey(key);
 
-		draw();
+			draw();
+		}
 	}
 private:
-	// TODO: Memory management refactor - use unique pointers where possible and where it seems logical
 	int height;
 	int width;
-	//unique_ptr<Map> board; // pointer to board to prevent initialization before constructor call
+	// flag for whether the game is running or not
 	bool running;
 	WINDOW* window;
 	// 2D vector of stack-like vectors (basically a 3D vector)
-	elemBoard<std::unique_ptr<Pixel>> board; // TODO: figure out why the template-style declaration is necessary
+	elemBoard<std::unique_ptr<Pixel>> board;
 	// pointer to current playable element - nullptr before spawn 
 	std::optional<std::pair<int, int>> playableCoords = std::nullopt;
 
@@ -294,11 +299,9 @@ private:
 
 int main() {
 	initscr();
+	
 	Game game;
-	// TODO: move this to a void Game::run() method (might fix some of the scoping/memory management stuff as a side effect)
-	while (game.isRunning()) {
-		game.render();
-	}
+	game.run();
 
 	endwin();
 }

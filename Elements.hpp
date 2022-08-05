@@ -8,7 +8,7 @@
 #include <memory>
 #include <utility>
 #include <variant>
-#include <optional>
+//#include <optional>
 #include <algorithm>
 #include <curses.h>
 
@@ -66,6 +66,10 @@ public:
 
 	virtual char getSymbol() const {
 		return symbol;
+	}
+
+	virtual const bool isNoClip() const {
+		return noclip;
 	}
 
 	virtual void setPosition(int newY, int newX) {
