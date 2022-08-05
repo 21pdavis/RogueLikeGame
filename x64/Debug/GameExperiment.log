@@ -1,3 +1,0 @@
-﻿  GameMain.cpp
-C:\Programming\C++\GameExperiment\GameMain.cpp(121,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  GameExperiment.vcxproj -> C:\Programming\C++\GameExperiment\x64\Debug\GameExperiment.exe
