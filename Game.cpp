@@ -1,9 +1,9 @@
-#include "Game.hpp"
-#include "Elements.hpp"
-#include "Colors.hpp"
-//#include "TextureWrapper.hpp"
+#include <iostream>
 
-std::unique_ptr<GameElement> player;
+#include "SDL_ttf.h"
+
+#include "Game.hpp"
+#include "Colors.hpp"
 
 Game::Game() {
 	init("My Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1280, 720, false);
@@ -13,11 +13,13 @@ Game::~Game() {
 	clean();
 }
 
-const bool Game::isRunning() const {
+const bool Game::isRunning() const
+{
 	return running;
 }
 
-void Game::init(const char* title, int xpos, int ypos, int width, int height, bool fullScreen) {
+void Game::init(const char* title, int xpos, int ypos, int width, int height, bool fullScreen)
+{
 	// check return code of SDL_Init() to get 
 	if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
 		std::cout << "Subsystems initialized..." << std::endl;
@@ -50,17 +52,17 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 			std::cout << "Error with message '" << TTF_GetError() << "' while initializing TrueType fonts library(SDL_ttf)" << std::endl;
 			return;
 		}
-
-		//player = std::make_unique<GameElement>("Textures/apple.png", renderer, 0, 0);
-		//player = std::make_unique<Player>()
+		
+		player = std::make_unique<Player>('P', renderer, 0, 0);
+		std::cout << "Game Elements initialized..." << std::endl;
 
 		std::cout << "Initialization finished. Running game..." << std::endl;
 		running = true;
 	}
 }
 
-//#pragma optimize( "", off)
-void Game::handleEvents() {
+void Game::handleEvents()
+{
 	SDL_Event event;
 
 	while (SDL_PollEvent(&event)) {
@@ -81,24 +83,25 @@ void Game::handleEvents() {
 		}
 	}
 }
-//#pragma optimize( "", on)
 
-void Game::update() {
-	//player->update();
+void Game::update()
+{
+	player->update();
 }
 
-void Game::render() {
+void Game::render()
+{
 	// clear buffer and screen back to default color specified in SDL_SetRenderDrawColor
 	SDL_RenderClear(renderer);
 
-	//player->render();
+	player->render();
 
 	// render to the screen
 	SDL_RenderPresent(renderer);
 }
 
-void Game::clean() {
-	TTF_CloseFont(defaultFont);
+void Game::clean()
+{
 	TTF_Quit();
 
 	SDL_DestroyRenderer(renderer);
@@ -106,4 +109,3 @@ void Game::clean() {
 	SDL_Quit();
  	std::cout << "Game Cleaned." << std::endl;
 }
-

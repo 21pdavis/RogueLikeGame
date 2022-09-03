@@ -110,6 +110,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>C:\Programming\C++\ExternalLibraries\SDL2\include;C:\Programming\C++\ExternalLibraries\SDL2_ttf-2.20.1\include;C:\Programming\C++\ExternalLibraries\SDL2_image-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\Programming\C++\ExternalLibraries\SDL2_ttf-2.20.1\lib\x64;C:\Programming\C++\ExternalLibraries\SDL2\lib\x64;C:\Programming\C++\ExternalLibraries\SDL2_image-2.6.2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -131,7 +132,6 @@
     <ClCompile Include="GameMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BoardOperations.hpp" />
     <ClInclude Include="Colors.hpp" />
     <ClInclude Include="Elements.hpp" />
   </ItemGroup>

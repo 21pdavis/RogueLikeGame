@@ -1,3 +1,1 @@
-C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.vcxproj.CopyComplete
 C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe
-C:\Programming\C++\TerminalGame\x64\Debug\pdcurses.dll

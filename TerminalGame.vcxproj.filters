@@ -29,9 +29,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BoardOperations.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Elements.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
