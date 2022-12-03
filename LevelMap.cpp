@@ -1,6 +1,6 @@
 #include "LevelMap.hpp"
-#pragma optimize("", off)
 
+#pragma optimize("", off)
 // Pixel Class
 // Public Interface
 Pixel::Pixel(int x, int y) 

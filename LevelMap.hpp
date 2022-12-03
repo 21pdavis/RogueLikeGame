@@ -89,8 +89,8 @@ public:
 
 	bool movePlayable(const std::pair<int, int>& direction);
 
-	static constexpr int MAP_WIDTH = 5;
-	static constexpr int MAP_HEIGHT = 5;
+	static constexpr int MAP_WIDTH = 80;
+	static constexpr int MAP_HEIGHT = 20;
 
 private:
 	int playableX;

@@ -16,11 +16,13 @@ GameElement::GameElement(int x, int y, bool playable, Height height, char symbol
 	this->texture = std::move(texture);
 }
 
+#pragma optimize("", off)
 void GameElement::update()
 {
 	dstRect.x = texture->getWidth() * x;
 	dstRect.y = texture->getHeight() * y;
 }
+#pragma optimize("", off)
 
 void GameElement::render()
 {
@@ -72,7 +74,7 @@ Player::Player(const int x, const int y)
 
 void Player::update()
 {
-
+	TextElement::update();
 }
 
 // Tile Implementation

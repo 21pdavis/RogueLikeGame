@@ -1,4 +1,4 @@
-﻿16:35:26.701     0>Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+﻿17:13:38.230     0>Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
                    Trying to import C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.props using extensions path C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild
                    Property reassignment: $(MSBuildProjectExtensionsPath)="C:\Programming\C++\TerminalGame\obj\" (previous value: "obj\") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Microsoft.Common.props (57,5)
                    Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
@@ -754,7 +754,7 @@
                    Overriding target "ComputeMetaGenInputs" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MetaGen.targets" with target "ComputeMetaGenInputs" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
                    Overriding target "GetNativeManifest" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
                    Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
-Build started 12/3/2022 4:35:26 PM.
+Build started 12/3/2022 5:13:38 PM.
 Environment at start of build:
                    ACSvcPort = 17532
                    ALLUSERSPROFILE = C:\ProgramData
@@ -764,8 +764,6 @@ Environment at start of build:
                    CommonProgramFiles = C:\Program Files\Common Files
                    CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
                    CommonProgramW6432 = C:\Program Files\Common Files
-                   COMPLUS_InstallRoot = 
-                   COMPLUS_Version = 
                    COMPUTERNAME = LAPTOP-V0VTGJ8S
                    ComSpec = C:\WINDOWS\system32\cmd.exe
                    DriverData = C:\Windows\System32\Drivers\DriverData
@@ -799,7 +797,7 @@ Environment at start of build:
                    PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
                    PUBLIC = C:\Users\Public
                    RlsSvcPort = 22112
-                   ServiceHubLogSessionKey = 9D5867FD
+                   ServiceHubLogSessionKey = 0F836C3F
                    SESSIONNAME = Console
                    SignInWithHomeTenantOnly = False
                    SystemDrive = C:
@@ -822,8 +820,8 @@ Environment at start of build:
                    VSSKUEDITION = Community
                    windir = C:\WINDOWS
 
-Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" on node 2 (Build target(s)).
-16:35:26.726     1>Initial Properties:
+Logging verbosity is set to: Diagnostic.17:13:38.245     1>Project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" on node 2 (Build target(s)).
+17:13:38.245     1>Initial Properties:
                    _ApplicableDebuggers = Desktop
                    _ApplicationTypeAndRevisionFound = true
                    _BuildActionType = Build
@@ -1965,7 +1963,7 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    SDKReferenceDirectoryRoot = C:\Users\pielo\AppData\Local\Microsoft SDKs;C:\Program Files (x86)\Microsoft SDKs
                    SDKReferenceRegistryRoot = Software\Microsoft\Microsoft SDKs
                    SDKVersion = 10.0
-                   ServiceHubLogSessionKey = 9D5867FD
+                   ServiceHubLogSessionKey = 0F836C3F
                    SESSIONNAME = Console
                    SetBuildDefaultEnvironmentVariablesDependsOn = 
                          AddExternalIncludDirectoriesToPaths;
@@ -2211,8 +2209,8 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    VsInstallRoot = C:\Program Files\Microsoft Visual Studio\2022\Community
                    VSLANG = 1033
                    VSSKUEDITION = Community
-                   VSTEL_CurrentSolutionBuildID = 2441558740
-                   VSTEL_SolutionSessionID = {183B4BE9-EB80-4990-8DDD-249782FF9BBD}
+                   VSTEL_CurrentSolutionBuildID = 232637671
+                   VSTEL_SolutionSessionID = {5E39C3C0-777D-429F-8B45-EF6FDD21FFC6}
                    VSVersion = $(VisualStudioVersion)
                    WebBrowserDebuggerDebuggerType = Auto
                    WebReference_EnableLegacyEventingModel = false
@@ -2271,8 +2269,8 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    XamlTemporaryAssemblyName = TerminalGame
                    YieldDuringToolExecution = true
 
-16:35:26.727     1>Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
-16:35:26.727     1>Target "_CheckForInvalidConfigurationAndPlatform: (TargetId:2)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
+17:13:38.245     1>Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
+17:13:38.245     1>Target "_CheckForInvalidConfigurationAndPlatform: (TargetId:2)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
                    Set Property: _InvalidConfigurationMessageText=The BaseOutputPath/OutputPath property is not set for project 'TerminalGame.vcxproj'.  Please check to make sure that you have specified a valid combination of Configuration and Platform for this project.  Configuration='Debug'  Platform='x64'.
                    Set Property: _InvalidConfigurationMessageText=The BaseOutputPath/OutputPath property is not set for project 'TerminalGame.vcxproj'.  Please check to make sure that you have specified a valid combination of Configuration and Platform for this project.  Configuration='Debug'  Platform='x64'.  This error may also appear if some other project is trying to follow a project-to-project reference to this project, this project has been unloaded or is not included in the solution, and the referencing project does not build using the same or an equivalent Configuration or Platform.
                    Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
@@ -2293,21 +2291,21 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
                    Task "Error" skipped, due to false condition; ( '$(_InitialMSBuildProjectExtensionsPath)' != '' And '$(MSBuildProjectExtensionsPath)' != '$(_InitialMSBuildProjectExtensionsPath)' ) was evaluated as ( 'C:\Programming\C++\TerminalGame\obj\' != '' And 'C:\Programming\C++\TerminalGame\obj\' != 'C:\Programming\C++\TerminalGame\obj\' ).
                    Task "Warning" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != 'C:\Programming\C++\TerminalGame\obj\' ).
-16:35:26.730     1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "TerminalGame.vcxproj".: (TargetId:2)
+17:13:38.247     1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "TerminalGame.vcxproj".: (TargetId:2)
                    Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-16:35:26.730     1>Target "SetTelemetryEnvironmentVariables: (TargetId:3)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
+17:13:38.247     1>Target "SetTelemetryEnvironmentVariables: (TargetId:3)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
                    Using "SetEnv" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
                    Task "SetEnv" (TaskId:4)
                      Task Parameter:Prefix=False (TaskId:4)
-                     Task Parameter:Value={183B4BE9-EB80-4990-8DDD-249782FF9BBD} (TaskId:4)
+                     Task Parameter:Value={5E39C3C0-777D-429F-8B45-EF6FDD21FFC6} (TaskId:4)
                      Task Parameter:Name=VSTEL_SolutionSessionID (TaskId:4)
-                     VSTEL_SolutionSessionID={183B4BE9-EB80-4990-8DDD-249782FF9BBD} (TaskId:4)
+                     VSTEL_SolutionSessionID={5E39C3C0-777D-429F-8B45-EF6FDD21FFC6} (TaskId:4)
                    Done executing task "SetEnv". (TaskId:4)
                    Task "SetEnv" (TaskId:5)
                      Task Parameter:Prefix=False (TaskId:5)
-                     Task Parameter:Value=2441558740 (TaskId:5)
+                     Task Parameter:Value=232637671 (TaskId:5)
                      Task Parameter:Name=VSTEL_CurrentSolutionBuildID (TaskId:5)
-                     VSTEL_CurrentSolutionBuildID=2441558740 (TaskId:5)
+                     VSTEL_CurrentSolutionBuildID=232637671 (TaskId:5)
                    Done executing task "SetEnv". (TaskId:5)
                    Task "SetEnv" (TaskId:6)
                      Task Parameter:Prefix=False (TaskId:6)
@@ -2316,8 +2314,8 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      VSTEL_ProjectID={9ED994E7-B8AF-4B9B-B69D-97A71AD21EB2} (TaskId:6)
                      Output Property: VSTEL_ProjectID={9ED994E7-B8AF-4B9B-B69D-97A71AD21EB2} (TaskId:6)
                    Done executing task "SetEnv". (TaskId:6)
-16:35:26.731     1>Done building target "SetTelemetryEnvironmentVariables" in project "TerminalGame.vcxproj".: (TargetId:3)
-16:35:26.731     1>Target "_PrepareForBuild: (TargetId:4)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
+17:13:38.248     1>Done building target "SetTelemetryEnvironmentVariables" in project "TerminalGame.vcxproj".: (TargetId:3)
+17:13:38.248     1>Target "_PrepareForBuild: (TargetId:4)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
                    Set Property: BuildType=Build
                    Set Property: _BuildActionType=Build
                    Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
@@ -2325,18 +2323,18 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                        CustomBuildStep=
                            TerminalGame
                                    Message=Performing Custom Build Step
-16:35:26.731     1>Done building target "_PrepareForBuild" in project "TerminalGame.vcxproj".: (TargetId:4)
-16:35:26.731     1>Target "_PrepareForReferenceResolution: (TargetId:5)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
+17:13:38.248     1>Done building target "_PrepareForBuild" in project "TerminalGame.vcxproj".: (TargetId:4)
+17:13:38.248     1>Target "_PrepareForReferenceResolution: (TargetId:5)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
                    Task "VCMessage" skipped, due to false condition; ('$(WarnAboutIndividualManagedFiles)' == 'true') was evaluated as ('' == 'true').
                    Set Property: TargetFrameworkMoniker=
                    Set Property: _FindDependencies=false
                    Set Property: AdditionalExplicitAssemblyReferences=
                    Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
-16:35:26.731     1>Done building target "_PrepareForReferenceResolution" in project "TerminalGame.vcxproj".: (TargetId:5)
+17:13:38.248     1>Done building target "_PrepareForReferenceResolution" in project "TerminalGame.vcxproj".: (TargetId:5)
                    Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Elements.cpp;Game.cpp;LevelMap.cpp;...'!='' and 'false'=='true' and '' != 'false').
-16:35:26.731     1>Target "BeforeResolveReferences: (TargetId:6)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
-16:35:26.731     1>Done building target "BeforeResolveReferences" in project "TerminalGame.vcxproj".: (TargetId:6)
-16:35:26.731     1>Target "AssignProjectConfiguration: (TargetId:7)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
+17:13:38.248     1>Target "BeforeResolveReferences: (TargetId:6)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
+17:13:38.248     1>Done building target "BeforeResolveReferences" in project "TerminalGame.vcxproj".: (TargetId:6)
+17:13:38.248     1>Target "AssignProjectConfiguration: (TargetId:7)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
                    Set Property: ShouldUnsetParentConfigurationAndPlatform=true
                    Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "AssignProjectConfiguration" (TaskId:7)
@@ -2351,14 +2349,14 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      Task Parameter:OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration=True (TaskId:7)
                      Task Parameter:CurrentProjectConfiguration=Debug (TaskId:7)
                    Done executing task "AssignProjectConfiguration". (TaskId:7)
-16:35:26.732     1>Done building target "AssignProjectConfiguration" in project "TerminalGame.vcxproj".: (TargetId:7)
+17:13:38.248     1>Done building target "AssignProjectConfiguration" in project "TerminalGame.vcxproj".: (TargetId:7)
                    Target "AssignProjectConfiguration" skipped. Previously built successfully.
-16:35:26.732     1>Target "_SplitProjectReferencesByFileExistence: (TargetId:8)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareProjectReferences" depends on it):
+17:13:38.248     1>Target "_SplitProjectReferencesByFileExistence: (TargetId:8)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareProjectReferences" depends on it):
                    Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
-16:35:26.732     1>Done building target "_SplitProjectReferencesByFileExistence" in project "TerminalGame.vcxproj".: (TargetId:8)
-16:35:26.732     1>Target "_AddOutputPathToGlobalPropertiesToRemove: (TargetId:9)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_GetProjectReferenceTargetFrameworkProperties" depends on it):
-16:35:26.732     1>Done building target "_AddOutputPathToGlobalPropertiesToRemove" in project "TerminalGame.vcxproj".: (TargetId:9)
-16:35:26.732     1>Target "_GetProjectReferenceTargetFrameworkProperties: (TargetId:10)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareProjectReferences" depends on it):
+17:13:38.248     1>Done building target "_SplitProjectReferencesByFileExistence" in project "TerminalGame.vcxproj".: (TargetId:8)
+17:13:38.249     1>Target "_AddOutputPathToGlobalPropertiesToRemove: (TargetId:9)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_GetProjectReferenceTargetFrameworkProperties" depends on it):
+17:13:38.249     1>Done building target "_AddOutputPathToGlobalPropertiesToRemove" in project "TerminalGame.vcxproj".: (TargetId:9)
+17:13:38.249     1>Target "_GetProjectReferenceTargetFrameworkProperties: (TargetId:10)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareProjectReferences" depends on it):
                    Set Property: ReferringTargetFrameworkForProjectReferences=
                    Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "MSBuild" (TaskId:8)
@@ -2373,31 +2371,31 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Task "GetReferenceNearestTargetFrameworkTask" skipped, due to false condition; ('@(_ProjectReferenceTargetFrameworkPossibilities)' != '' and '$(ReferringTargetFrameworkForProjectReferences)' != ''
                                                                            And '$(GetReferenceNearestTargetFrameworkTaskSupportsTargetPlatformParameter)' != 'true' and '%(_ProjectReferenceTargetFrameworkPossibilities.IsVcxOrNativeProj)' != 'true') was evaluated as ('' != '' and '' != ''
                                                                            And 'true' != 'true' and '' != 'true').
-16:35:26.733     1>Done building target "_GetProjectReferenceTargetFrameworkProperties" in project "TerminalGame.vcxproj".: (TargetId:10)
+17:13:38.249     1>Done building target "_GetProjectReferenceTargetFrameworkProperties" in project "TerminalGame.vcxproj".: (TargetId:10)
                    Target "_GetProjectReferencePlatformProperties" skipped, due to false condition; ('$(EnableDynamicPlatformResolution)' == 'true'
                                         and '$(BuildingInsideVisualStudio)' != 'true'
                                         and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true'
                                         and 'true' != 'true'
                                         and '' != '').
-16:35:26.733     1>Target "PrepareProjectReferences: (TargetId:11)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveProjectReferences" depends on it):
-16:35:26.733     1>Done building target "PrepareProjectReferences" in project "TerminalGame.vcxproj".: (TargetId:11)
+17:13:38.249     1>Target "PrepareProjectReferences: (TargetId:11)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveProjectReferences" depends on it):
+17:13:38.249     1>Done building target "PrepareProjectReferences" in project "TerminalGame.vcxproj".: (TargetId:11)
                    Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
-16:35:26.733     1>Target "ResolveProjectReferences: (TargetId:12)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
+17:13:38.249     1>Target "ResolveProjectReferences: (TargetId:12)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '17.0' != '10.0' and '' != '').
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
                    Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
-16:35:26.733     1>Done building target "ResolveProjectReferences" in project "TerminalGame.vcxproj".: (TargetId:12)
+17:13:38.249     1>Done building target "ResolveProjectReferences" in project "TerminalGame.vcxproj".: (TargetId:12)
                    Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
                    Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
                    Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
                    Target "ResolveProjectReferences" skipped. Previously built successfully.
                    Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
-16:35:26.733     1>Target "GetFrameworkPaths: (TargetId:13)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveAssemblyReferences" depends on it):
-16:35:26.733     1>Done building target "GetFrameworkPaths" in project "TerminalGame.vcxproj".: (TargetId:13)
+17:13:38.249     1>Target "GetFrameworkPaths: (TargetId:13)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+17:13:38.249     1>Done building target "GetFrameworkPaths" in project "TerminalGame.vcxproj".: (TargetId:13)
                    Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
                    Target "GetFrameworkPaths" skipped. Previously built successfully.
-16:35:26.733     1>Target "GetReferenceAssemblyPaths: (TargetId:14)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+17:13:38.249     1>Target "GetReferenceAssemblyPaths: (TargetId:14)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveAssemblyReferences" depends on it):
                    Set Property: TargetFrameworkDirectory=
                    Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('' != '' and ('' == '' or '' == '')).
                    Set Property: TargetFrameworkDirectory=;;
@@ -2405,8 +2403,8 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Set Property: RemoveAssemblyFoldersIfNoTargetFramework=true
                    Set Property: AssemblySearchPaths={CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};;{GAC};{RawFileName};C:\Programming\C++\TerminalGame\x64\Debug\
                    Set Property: TargetFrameworkProfile=
-16:35:26.733     1>Done building target "GetReferenceAssemblyPaths" in project "TerminalGame.vcxproj".: (TargetId:14)
-16:35:26.734     1>Target "AddExternalIncludDirectoriesToPaths: (TargetId:15)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "SetBuildDefaultEnvironmentVariables" depends on it):
+17:13:38.249     1>Done building target "GetReferenceAssemblyPaths" in project "TerminalGame.vcxproj".: (TargetId:14)
+17:13:38.250     1>Target "AddExternalIncludDirectoriesToPaths: (TargetId:15)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "SetBuildDefaultEnvironmentVariables" depends on it):
                    Added Item(s): 
                        _ExternalIncludePathToInclude=
                            C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include
@@ -2451,8 +2449,8 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                            C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt
                            C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt
                            C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um
-16:35:26.734     1>Done building target "AddExternalIncludDirectoriesToPaths" in project "TerminalGame.vcxproj".: (TargetId:15)
-16:35:26.734     1>Target "SetBuildDefaultEnvironmentVariables: (TargetId:16)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareForBuild" depends on it):
+17:13:38.250     1>Done building target "AddExternalIncludDirectoriesToPaths" in project "TerminalGame.vcxproj".: (TargetId:15)
+17:13:38.250     1>Target "SetBuildDefaultEnvironmentVariables: (TargetId:16)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareForBuild" depends on it):
                    Task "SetEnv" (TaskId:9)
                      Task Parameter:Prefix=False (TaskId:9)
                      Task Parameter:Value=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64;C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Python311\Scripts\;C:\Python311\;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Users\pielo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\Hostx64\x86;C:\Programming\vcpkg\;C:\Python_Install;C:\Users\pielo\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\Users\pielo\.cargo\bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Users\pielo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\Hostx64\x86;C:\vcpkg\;C:\Users\pielo\.cargo\bin;C:\Users\pielo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pielo\AppData\Local\GitHubDesktop\bin;C:\Python_Install\Scripts;C:\Python_Install;C:\Users\pielo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pielo\AppData\Local\GitHubDesktop\bin;C:\Python_Install\Scripts;C:\Python_Install;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\Hostx64\x86;C:\Users\pielo\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\pielo\.dotnet\tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Users\pielo\AppData\Roaming\npm; (TaskId:9)
@@ -2488,10 +2486,10 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      EXTERNAL_INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\atlmfc\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um; (TaskId:13)
                      Output Property: EXTERNAL_INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include%3b%3bC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\atlmfc\include%3b%3bC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include%3b%3bC:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt%3b%3b%3bC:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\um%3bC:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\shared%3bC:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\winrt%3bC:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\cppwinrt%3bC:\Program Files %28x86%29\Windows Kits\NETFXSDK\4.8\Include\um%3b (TaskId:13)
                    Done executing task "SetEnv". (TaskId:13)
-16:35:26.734     1>Done building target "SetBuildDefaultEnvironmentVariables" in project "TerminalGame.vcxproj".: (TargetId:16)
+17:13:38.250     1>Done building target "SetBuildDefaultEnvironmentVariables" in project "TerminalGame.vcxproj".: (TargetId:16)
                    Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
                    Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-16:35:26.734     1>Target "GetResolvedWinMD: (TargetId:17)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareForBuild" depends on it):
+17:13:38.250     1>Target "GetResolvedWinMD: (TargetId:17)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareForBuild" depends on it):
                    Added Item(s): 
                        Link=
                            tmp
@@ -2580,8 +2578,8 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                    TypeLibraryResourceID=1
                                    UACExecutionLevel=AsInvoker
                                    UACUIAccess=false
-16:35:26.735     1>Done building target "GetResolvedWinMD" in project "TerminalGame.vcxproj".: (TargetId:17)
-16:35:26.735     1>Target "_CheckWindowsSDKInstalled: (TargetId:18)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareForBuild" depends on it):
+17:13:38.250     1>Done building target "GetResolvedWinMD" in project "TerminalGame.vcxproj".: (TargetId:17)
+17:13:38.250     1>Target "_CheckWindowsSDKInstalled: (TargetId:18)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareForBuild" depends on it):
                    Set Property: WindowsSDKInstalled=false
                    Set Property: WindowsSDK_UAP_Support=false
                    Set Property: WindowsSDK_Desktop_Support=false
@@ -2590,11 +2588,11 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Set Property: WindowsSDK_Desktop_Support=true
                    Task "VCMessage" skipped, due to false condition; ('$(WindowsSDKInstalled)' != 'true') was evaluated as ('true' != 'true').
                    Task "VCMessage" skipped, due to false condition; ('$(WindowsAppContainer)' != 'true' and '$(WindowsSDK_Desktop_Support)' != true) was evaluated as ('false' != 'true' and 'true' != true).
-16:35:26.736     1>Done building target "_CheckWindowsSDKInstalled" in project "TerminalGame.vcxproj".: (TargetId:18)
+17:13:38.250     1>Done building target "_CheckWindowsSDKInstalled" in project "TerminalGame.vcxproj".: (TargetId:18)
                    Target "GetFrameworkPaths" skipped. Previously built successfully.
                    Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
                    Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
-16:35:26.736     1>Target "SetCABuildNativeEnvironmentVariables: (TargetId:19)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareForBuild" depends on it):
+17:13:38.251     1>Target "SetCABuildNativeEnvironmentVariables: (TargetId:19)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareForBuild" depends on it):
                    Task "SetEnv" (TaskId:14)
                      Task Parameter:Prefix=False (TaskId:14)
                      Task Parameter:Value=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\atlmfc\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um; (TaskId:14)
@@ -2602,8 +2600,8 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      CAExcludePath=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\atlmfc\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um; (TaskId:14)
                    Done executing task "SetEnv". (TaskId:14)
                    Task "SetEnv" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(VCCodeAnalysisUX)'=='true') was evaluated as ('false'=='true' and 'true'=='true').
-16:35:26.736     1>Done building target "SetCABuildNativeEnvironmentVariables" in project "TerminalGame.vcxproj".: (TargetId:19)
-16:35:26.736     1>Target "PrepareForBuild: (TargetId:20)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+17:13:38.251     1>Done building target "SetCABuildNativeEnvironmentVariables" in project "TerminalGame.vcxproj".: (TargetId:19)
+17:13:38.251     1>Target "PrepareForBuild: (TargetId:20)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveAssemblyReferences" depends on it):
                    Set Property: TargetDir=C:\Programming\C++\TerminalGame\x64\Debug\
                    Set Property: LocalDebuggerCommand=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe
                    Set Property: BuildProjectReferences=false
@@ -2744,19 +2742,19 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                              C:\Programming\C++\TerminalGame\x64\Debug\
                              x64\Debug\TerminalGame.tlog\ (TaskId:17)
                    Done executing task "MakeDir". (TaskId:17)
-16:35:26.739     1>Done building target "PrepareForBuild" in project "TerminalGame.vcxproj".: (TargetId:20)
+17:13:38.252     1>Done building target "PrepareForBuild" in project "TerminalGame.vcxproj".: (TargetId:20)
                    Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
                    Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Elements.cpp;Game.cpp;LevelMap.cpp;...'!='' and 'false'=='true' and '' != 'false').
                    Target "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
-16:35:26.740     1>Target "ResolveSDKReferences: (TargetId:21)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+17:13:38.252     1>Target "ResolveSDKReferences: (TargetId:21)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveAssemblyReferences" depends on it):
                    Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
-16:35:26.740     1>Done building target "ResolveSDKReferences" in project "TerminalGame.vcxproj".: (TargetId:21)
+17:13:38.252     1>Done building target "ResolveSDKReferences" in project "TerminalGame.vcxproj".: (TargetId:21)
                    Target "ResolveSDKReferences" skipped. Previously built successfully.
-16:35:26.740     1>Target "ExpandSDKReferences: (TargetId:22)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+17:13:38.253     1>Target "ExpandSDKReferences: (TargetId:22)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveAssemblyReferences" depends on it):
                    Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
-16:35:26.740     1>Done building target "ExpandSDKReferences" in project "TerminalGame.vcxproj".: (TargetId:22)
+17:13:38.253     1>Done building target "ExpandSDKReferences" in project "TerminalGame.vcxproj".: (TargetId:22)
                    Target "ResolveNuGetPackageAssets" skipped, due to false condition; ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')) was evaluated as ('true' == 'true' and exists('obj\project.assets.json')).
-16:35:26.740     1>Target "ResolveAssemblyReferences: (TargetId:23)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
+17:13:38.253     1>Target "ResolveAssemblyReferences: (TargetId:23)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
                    Added Item(s): _ReferenceInstalledAssemblyDirectory=C:\Program Files (x86)\Windows Kits\10\References
                    Set Property: ResolveAssemblyReferencesStateFile=x64\Debug\TerminalGame.vcxproj.AssemblyReference.cache
                    Set Property: ResolveAssemblyReferencesSilent=false
@@ -2767,18 +2765,18 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Set Property: ResolveAssemblyReferenceOutputUnresolvedAssemblyConflicts=false
                    Set Property: FindDependenciesOfExternallyResolvedReferences=false
                    Task "ResolveAssemblyReference" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
-16:35:26.740     1>Done building target "ResolveAssemblyReferences" in project "TerminalGame.vcxproj".: (TargetId:23)
+17:13:38.253     1>Done building target "ResolveAssemblyReferences" in project "TerminalGame.vcxproj".: (TargetId:23)
                    Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true').
                    Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and Exists('$(_GenerateBindingRedirectsIntermediateAppConfig)')) was evaluated as ('' == 'true' and 'true' == 'true' and Exists('x64\Debug\TerminalGame.exe.config')).
                    Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
-16:35:26.740     1>Target "AfterResolveReferences: (TargetId:24)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
-16:35:26.740     1>Done building target "AfterResolveReferences" in project "TerminalGame.vcxproj".: (TargetId:24)
+17:13:38.253     1>Target "AfterResolveReferences: (TargetId:24)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ResolveReferences" depends on it):
+17:13:38.253     1>Done building target "AfterResolveReferences" in project "TerminalGame.vcxproj".: (TargetId:24)
                    Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
-16:35:26.740     1>Target "ResolveReferences: (TargetId:25)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
-16:35:26.740     1>Done building target "ResolveReferences" in project "TerminalGame.vcxproj".: (TargetId:25)
+17:13:38.253     1>Target "ResolveReferences: (TargetId:25)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
+17:13:38.253     1>Done building target "ResolveReferences" in project "TerminalGame.vcxproj".: (TargetId:25)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "PrepareForBuild" skipped. Previously built successfully.
-16:35:26.740     1>Target "InitializeBuildStatus: (TargetId:26)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
+17:13:38.253     1>Target "InitializeBuildStatus: (TargetId:26)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
                    Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "ReadLinesFromFile" (TaskId:18)
                      Task Parameter:File=x64\Debug\TerminalGame.tlog\TerminalGame.lastbuildstate (TaskId:18)
@@ -2806,33 +2804,33 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      Task Parameter:Files=x64\Debug\TerminalGame.tlog\unsuccessfulbuild (TaskId:20)
                      Creating "x64\Debug\TerminalGame.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified. (TaskId:20)
                    Done executing task "Touch". (TaskId:20)
-16:35:26.743     1>Done building target "InitializeBuildStatus" in project "TerminalGame.vcxproj".: (TargetId:26)
+17:13:38.254     1>Done building target "InitializeBuildStatus" in project "TerminalGame.vcxproj".: (TargetId:26)
                    Target "PrepareProjectReferences" skipped. Previously built successfully.
-16:35:26.743     1>Target "BuildGenerateSourcesTraverse: (TargetId:27)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildGenerateSources" depends on it):
+17:13:38.254     1>Target "BuildGenerateSourcesTraverse: (TargetId:27)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildGenerateSources" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != '' and '' == 'true').
-16:35:26.743     1>Done building target "BuildGenerateSourcesTraverse" in project "TerminalGame.vcxproj".: (TargetId:27)
+17:13:38.254     1>Done building target "BuildGenerateSourcesTraverse" in project "TerminalGame.vcxproj".: (TargetId:27)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
-16:35:26.743     1>Target "BeforeBuildGenerateSources: (TargetId:28)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-16:35:26.743     1>Done building target "BeforeBuildGenerateSources" in project "TerminalGame.vcxproj".: (TargetId:28)
-16:35:26.743     1>Target "PreBuildEvent: (TargetId:29)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+17:13:38.254     1>Target "BeforeBuildGenerateSources: (TargetId:28)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+17:13:38.254     1>Done building target "BeforeBuildGenerateSources" in project "TerminalGame.vcxproj".: (TargetId:28)
+17:13:38.254     1>Target "PreBuildEvent: (TargetId:29)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
                    Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
                    Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
-16:35:26.743     1>Done building target "PreBuildEvent" in project "TerminalGame.vcxproj".: (TargetId:29)
+17:13:38.254     1>Done building target "PreBuildEvent" in project "TerminalGame.vcxproj".: (TargetId:29)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "InitializeBuildStatus" skipped. Previously built successfully.
                    Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
                    Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
-16:35:26.743     1>Target "_SelectedFiles: (TargetId:30)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "SelectCustomBuild" depends on it):
-16:35:26.743     1>Done building target "_SelectedFiles" in project "TerminalGame.vcxproj".: (TargetId:30)
-16:35:26.743     1>Target "SelectCustomBuild: (TargetId:31)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CustomBuild" depends on it):
-16:35:26.743     1>Done building target "SelectCustomBuild" in project "TerminalGame.vcxproj".: (TargetId:31)
-16:35:26.743     1>Target "ComputeCustomBuildOutput: (TargetId:32)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CustomBuild" depends on it):
+17:13:38.254     1>Target "_SelectedFiles: (TargetId:30)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "SelectCustomBuild" depends on it):
+17:13:38.254     1>Done building target "_SelectedFiles" in project "TerminalGame.vcxproj".: (TargetId:30)
+17:13:38.254     1>Target "SelectCustomBuild: (TargetId:31)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CustomBuild" depends on it):
+17:13:38.254     1>Done building target "SelectCustomBuild" in project "TerminalGame.vcxproj".: (TargetId:31)
+17:13:38.254     1>Target "ComputeCustomBuildOutput: (TargetId:32)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CustomBuild" depends on it):
                    Task "CreateItem" skipped, due to false condition; ('%(CustomBuildOutputs.OutputItemType)'!='') was evaluated as (''!='').
                    Task "MakeDir" (TaskId:21)
                    Done executing task "MakeDir". (TaskId:21)
-16:35:26.743     1>Done building target "ComputeCustomBuildOutput" in project "TerminalGame.vcxproj".: (TargetId:32)
-16:35:26.743     1>Target "CustomBuild: (TargetId:33)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+17:13:38.255     1>Done building target "ComputeCustomBuildOutput" in project "TerminalGame.vcxproj".: (TargetId:32)
+17:13:38.255     1>Target "CustomBuild: (TargetId:33)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
                    Set Property: CustomBuildToolArchitecture=Native32Bit
                    Using "GetOutOfDateItems" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
                    Task "GetOutOfDateItems" (TaskId:22)
@@ -2854,12 +2852,12 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Done executing task "GetOutOfDateItems". (TaskId:23)
                    Task "ParallelCustomBuild" skipped, due to false condition; ('@(_ParallelCustomBuild)' != '') was evaluated as ('' != '').
                    Task "CustomBuild" skipped, due to false condition; ('@(_CustomBuild)' != '') was evaluated as ('' != '').
-16:35:26.744     1>Done building target "CustomBuild" in project "TerminalGame.vcxproj".: (TargetId:33)
+17:13:38.255     1>Done building target "CustomBuild" in project "TerminalGame.vcxproj".: (TargetId:33)
                    Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
                    Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
                    Target "_CreateCopyFileItems" skipped, due to false condition; ('@(CopyFileToFolders)' != '') was evaluated as ('' != '').
                    Target "_SelectedFiles" skipped. Previously built successfully.
-16:35:26.744     1>Target "CopyFileToFolders: (TargetId:34)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+17:13:38.255     1>Target "CopyFileToFolders: (TargetId:34)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
                    Task "GetOutOfDateItems" (TaskId:24)
                      Task Parameter:TLogNamePrefix=CopyFile (TaskId:24)
                      Task Parameter:TLogDirectory=x64\Debug\TerminalGame.tlog\ (TaskId:24)
@@ -2868,71 +2866,71 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      Task Parameter:TrackFileAccess=True (TaskId:24)
                    Done executing task "GetOutOfDateItems". (TaskId:24)
                    Task "Copy" skipped, due to false condition; ('@(_OutOfDateCopyFile)' != '') was evaluated as ('' != '').
-16:35:26.745     1>Done building target "CopyFileToFolders" in project "TerminalGame.vcxproj".: (TargetId:34)
+17:13:38.255     1>Done building target "CopyFileToFolders" in project "TerminalGame.vcxproj".: (TargetId:34)
                    Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
-16:35:26.745     1>Target "_Xsd: (TargetId:35)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-16:35:26.745     1>Done building target "_Xsd" in project "TerminalGame.vcxproj".: (TargetId:35)
-16:35:26.745     1>Target "MakeDirsForMidl: (TargetId:36)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Midl" depends on it):
+17:13:38.255     1>Target "_Xsd: (TargetId:35)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+17:13:38.255     1>Done building target "_Xsd" in project "TerminalGame.vcxproj".: (TargetId:35)
+17:13:38.255     1>Target "MakeDirsForMidl: (TargetId:36)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Midl" depends on it):
                    Set Property: Midl_OutputDir=
                    Task "Makedir" (TaskId:25)
                    Done executing task "Makedir". (TaskId:25)
-16:35:26.745     1>Done building target "MakeDirsForMidl" in project "TerminalGame.vcxproj".: (TargetId:36)
+17:13:38.256     1>Done building target "MakeDirsForMidl" in project "TerminalGame.vcxproj".: (TargetId:36)
                    Target "Midl" skipped, due to false condition; ('@(Midl)' != '') was evaluated as ('' != '').
                    Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
                    Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
-16:35:26.745     1>Target "ComputeMIDLGeneratedCompileInputs: (TargetId:37)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Midl" depends on it):
+17:13:38.256     1>Target "ComputeMIDLGeneratedCompileInputs: (TargetId:37)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Midl" depends on it):
                    Set Property: Midl_OutputDir=
-16:35:26.745     1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "TerminalGame.vcxproj".: (TargetId:37)
-16:35:26.745     1>Target "AfterMidl: (TargetId:38)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Midl" depends on it):
-16:35:26.745     1>Done building target "AfterMidl" in project "TerminalGame.vcxproj".: (TargetId:38)
-16:35:26.745     1>Target "_Midl: (TargetId:39)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-16:35:26.745     1>Done building target "_Midl" in project "TerminalGame.vcxproj".: (TargetId:39)
-16:35:26.745     1>Target "AfterBuildGenerateSources: (TargetId:40)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-16:35:26.745     1>Done building target "AfterBuildGenerateSources" in project "TerminalGame.vcxproj".: (TargetId:40)
-16:35:26.745     1>Target "AfterBuildGenerateSourcesEvent: (TargetId:41)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-16:35:26.745     1>Done building target "AfterBuildGenerateSourcesEvent" in project "TerminalGame.vcxproj".: (TargetId:41)
-16:35:26.745     1>Target "_BuildGenerateSourcesAction: (TargetId:42)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildGenerateSources" depends on it):
-16:35:26.745     1>Done building target "_BuildGenerateSourcesAction" in project "TerminalGame.vcxproj".: (TargetId:42)
-16:35:26.745     1>Target "BuildGenerateSources: (TargetId:43)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
-16:35:26.745     1>Done building target "BuildGenerateSources" in project "TerminalGame.vcxproj".: (TargetId:43)
+17:13:38.256     1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "TerminalGame.vcxproj".: (TargetId:37)
+17:13:38.256     1>Target "AfterMidl: (TargetId:38)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Midl" depends on it):
+17:13:38.256     1>Done building target "AfterMidl" in project "TerminalGame.vcxproj".: (TargetId:38)
+17:13:38.256     1>Target "_Midl: (TargetId:39)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+17:13:38.256     1>Done building target "_Midl" in project "TerminalGame.vcxproj".: (TargetId:39)
+17:13:38.256     1>Target "AfterBuildGenerateSources: (TargetId:40)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+17:13:38.256     1>Done building target "AfterBuildGenerateSources" in project "TerminalGame.vcxproj".: (TargetId:40)
+17:13:38.256     1>Target "AfterBuildGenerateSourcesEvent: (TargetId:41)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+17:13:38.256     1>Done building target "AfterBuildGenerateSourcesEvent" in project "TerminalGame.vcxproj".: (TargetId:41)
+17:13:38.256     1>Target "_BuildGenerateSourcesAction: (TargetId:42)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildGenerateSources" depends on it):
+17:13:38.256     1>Done building target "_BuildGenerateSourcesAction" in project "TerminalGame.vcxproj".: (TargetId:42)
+17:13:38.256     1>Target "BuildGenerateSources: (TargetId:43)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
+17:13:38.256     1>Done building target "BuildGenerateSources" in project "TerminalGame.vcxproj".: (TargetId:43)
                    Target "PrepareProjectReferences" skipped. Previously built successfully.
-16:35:26.745     1>Target "BuildCompileTraverse: (TargetId:44)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildCompile" depends on it):
+17:13:38.256     1>Target "BuildCompileTraverse: (TargetId:44)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildCompile" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
-16:35:26.745     1>Done building target "BuildCompileTraverse" in project "TerminalGame.vcxproj".: (TargetId:44)
+17:13:38.256     1>Done building target "BuildCompileTraverse" in project "TerminalGame.vcxproj".: (TargetId:44)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
-16:35:26.745     1>Target "BeforeClCompile: (TargetId:45)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
-16:35:26.745     1>Done building target "BeforeClCompile" in project "TerminalGame.vcxproj".: (TargetId:45)
+17:13:38.256     1>Target "BeforeClCompile: (TargetId:45)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
+17:13:38.256     1>Done building target "BeforeClCompile" in project "TerminalGame.vcxproj".: (TargetId:45)
                    Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
                    Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
-16:35:26.745     1>Target "ComputeCLInputPDBName: (TargetId:46)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
-16:35:26.745     1>Done building target "ComputeCLInputPDBName" in project "TerminalGame.vcxproj".: (TargetId:46)
+17:13:38.256     1>Target "ComputeCLInputPDBName: (TargetId:46)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
+17:13:38.256     1>Done building target "ComputeCLInputPDBName" in project "TerminalGame.vcxproj".: (TargetId:46)
                    Target "ResolveReferences" skipped. Previously built successfully.
-16:35:26.745     1>Target "FindReferenceAssembliesForReferences: (TargetId:47)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ComputeReferenceCLInput" depends on it):
-16:35:26.745     1>Done building target "FindReferenceAssembliesForReferences" in project "TerminalGame.vcxproj".: (TargetId:47)
+17:13:38.256     1>Target "FindReferenceAssembliesForReferences: (TargetId:47)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ComputeReferenceCLInput" depends on it):
+17:13:38.256     1>Done building target "FindReferenceAssembliesForReferences" in project "TerminalGame.vcxproj".: (TargetId:47)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
-16:35:26.745     1>Target "GetReferencedVCProjectsInfo: (TargetId:48)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ComputeReferenceCLInput" depends on it):
+17:13:38.256     1>Target "GetReferencedVCProjectsInfo: (TargetId:48)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ComputeReferenceCLInput" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '').
-16:35:26.745     1>Done building target "GetReferencedVCProjectsInfo" in project "TerminalGame.vcxproj".: (TargetId:48)
-16:35:26.745     1>Target "ComputeReferenceCLInput: (TargetId:49)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
+17:13:38.256     1>Done building target "GetReferencedVCProjectsInfo" in project "TerminalGame.vcxproj".: (TargetId:48)
+17:13:38.256     1>Target "ComputeReferenceCLInput: (TargetId:49)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
                    Task "WriteLinesToFile" skipped, due to false condition; ('@(_ReferenceOutputsToCopyLocally)'!='' and '$(DesignTimeBuild)' != 'true' and '$(TrackFileAccess)' == 'true') was evaluated as (''!='' and '' != 'true' and 'true' == 'true').
                    Task "WriteLinesToFile" skipped, due to false condition; ('@(_ReferenceOutputsToCopyLocally)'!='' and '$(DesignTimeBuild)' != 'true' and '$(TrackFileAccess)' == 'true') was evaluated as (''!='' and '' != 'true' and 'true' == 'true').
                    Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
-16:35:26.746     1>Done building target "ComputeReferenceCLInput" in project "TerminalGame.vcxproj".: (TargetId:49)
-16:35:26.746     1>Target "WarnCompileDuplicatedFilename: (TargetId:50)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
+17:13:38.256     1>Done building target "ComputeReferenceCLInput" in project "TerminalGame.vcxproj".: (TargetId:49)
+17:13:38.256     1>Target "WarnCompileDuplicatedFilename: (TargetId:50)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
                    Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'Elements.cpp' != 'Elements.cpp' and 'x64\Debug\' == 'x64\Debug\').
                    Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'Game.cpp' != 'Game.cpp' and 'x64\Debug\' == 'x64\Debug\').
                    Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'LevelMap.cpp' != 'LevelMap.cpp' and 'x64\Debug\' == 'x64\Debug\').
                    Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'Wrappers.cpp' != 'Wrappers.cpp' and 'x64\Debug\' == 'x64\Debug\').
                    Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'GameMain.cpp' != 'GameMain.cpp' and 'x64\Debug\' == 'x64\Debug\').
-16:35:26.746     1>Done building target "WarnCompileDuplicatedFilename" in project "TerminalGame.vcxproj".: (TargetId:50)
-16:35:26.746     1>Target "FixupCLCompileOptions: (TargetId:51)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
+17:13:38.257     1>Done building target "WarnCompileDuplicatedFilename" in project "TerminalGame.vcxproj".: (TargetId:50)
+17:13:38.257     1>Target "FixupCLCompileOptions: (TargetId:51)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
                    Set Property: EnableCppModules=true
                    Set Property: EnableCppModules=false
                    Set Property: _PCHForceSyncWrite=true
-16:35:26.748     1>Done building target "FixupCLCompileOptions" in project "TerminalGame.vcxproj".: (TargetId:51)
-16:35:26.748     1>Target "MakeDirsForCl: (TargetId:52)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
+17:13:38.258     1>Done building target "FixupCLCompileOptions" in project "TerminalGame.vcxproj".: (TargetId:51)
+17:13:38.258     1>Target "MakeDirsForCl: (TargetId:52)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
                    Added Item(s): ClDirsToMake=C:\Programming\C++\TerminalGame\x64\Debug
                    Added Item(s): ClDirsToMake=C:\Programming\C++\TerminalGame\x64\Debug
                    Added Item(s): ClDirsToMake=C:\Programming\C++\TerminalGame\x64\Debug
@@ -2951,7 +2949,7 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                            C:\Programming\C++\TerminalGame\x64\Debug
                            C:\Programming\C++\TerminalGame\x64\Debug
                            C:\Programming\C++\TerminalGame\x64\Debug
-16:35:26.749     1>Done building target "MakeDirsForCl" in project "TerminalGame.vcxproj".: (TargetId:52)
+17:13:38.258     1>Done building target "MakeDirsForCl" in project "TerminalGame.vcxproj".: (TargetId:52)
                    Target "_SelectedFiles" skipped. Previously built successfully.
                    Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
                    Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
@@ -2961,11 +2959,11 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Target "FixupCLCompileOptions" skipped. Previously built successfully.
                    Target "SelectCustomBuild" skipped. Previously built successfully.
                    Target "SetModuleDependencies" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(EnableCppModules)' == 'true') was evaluated as ('' != 'true' and 'false' == 'true').
-16:35:26.749     1>Target "SelectClCompile: (TargetId:53)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ClCompile" depends on it):
-16:35:26.749     1>Done building target "SelectClCompile" in project "TerminalGame.vcxproj".: (TargetId:53)
+17:13:38.259     1>Target "SelectClCompile: (TargetId:53)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ClCompile" depends on it):
+17:13:38.259     1>Done building target "SelectClCompile" in project "TerminalGame.vcxproj".: (TargetId:53)
                    Target "SelectAnalysisManifest" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
                    Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Elements.cpp;Game.cpp;LevelMap.cpp;...' != '' and 'false' == 'True').
-16:35:26.749     1>Target "ClCompile: (TargetId:54)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
+17:13:38.259     1>Target "ClCompile: (TargetId:54)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
                    Set Property: CLToolArchitecture=Native64Bit
                    Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('ProgramDatabase' != '' and 'ProgramDatabase' != 'None' and 'ProgramDatabase' != 'OldStyle' and 'x64\Debug\vc143.pdb' != '' and !Exists(x64\Debug\vc143.pdb)).
                    Task "MultiToolTask" skipped, due to false condition; ('%(ClCompile.CompilerIteration)' == 'Modules') was evaluated as ('' == 'Modules').
@@ -3309,7 +3307,7 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                      AssemblerOutput=NoListing
                                      BasicRuntimeChecks=Default
                                      BrowseInformation=false
-                                     BrowseInformationFile=x64\Debug\
+                                     BrowseInformationFile=x64\Debug\Wrappers.sbr
                                      BufferSecurityCheck=true
                                      BuildingInIDE=true
                                      CallingConvention=Cdecl
@@ -3351,6 +3349,7 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                      ModuleDependenciesFile=x64\Debug\
                                      ModuleOutputFile=
                                      ModulesSupported=true
+                                     ObjectFile=x64\Debug\Wrappers.obj
                                      ObjectFileName=x64\Debug\
                                      OmitDefaultLibName=false
                                      Optimization=MaxSpeed
@@ -3383,7 +3382,7 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                      WarningLevel=Level1
                                      WholeProgramOptimization=false
                                      WinRTNoStdLib=false
-                                     XMLDocumentationFileName=x64\Debug\
+                                     XMLDocumentationFileName=x64\Debug\Wrappers.xdc
                              GameMain.cpp
                                      AcceptableNonZeroExitCodes=
                                      AdditionalIncludeDirectories=C:\Programming\C++\ExternalLibraries\SDL2\include;C:\Programming\C++\ExternalLibraries\SDL2_ttf-2.20.1\include;C:\Programming\C++\ExternalLibraries\SDL2_image-2.6.2\include;
@@ -3392,7 +3391,7 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                      AssemblerOutput=NoListing
                                      BasicRuntimeChecks=Default
                                      BrowseInformation=false
-                                     BrowseInformationFile=x64\Debug\
+                                     BrowseInformationFile=x64\Debug\GameMain.sbr
                                      BufferSecurityCheck=true
                                      BuildingInIDE=true
                                      CallingConvention=Cdecl
@@ -3434,6 +3433,7 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                      ModuleDependenciesFile=x64\Debug\
                                      ModuleOutputFile=
                                      ModulesSupported=true
+                                     ObjectFile=x64\Debug\GameMain.obj
                                      ObjectFileName=x64\Debug\
                                      OmitDefaultLibName=false
                                      Optimization=MaxSpeed
@@ -3466,7 +3466,7 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                      WarningLevel=Level1
                                      WholeProgramOptimization=false
                                      WinRTNoStdLib=false
-                                     XMLDocumentationFileName=x64\Debug\ (TaskId:27)
+                                     XMLDocumentationFileName=x64\Debug\GameMain.xdc (TaskId:27)
                      Task Parameter:ProgramDataBaseFileName=x64\Debug\vc143.pdb (TaskId:27)
                      Task Parameter:RemoveUnreferencedCodeData=True (TaskId:27)
                      Task Parameter:FloatingPointModel=Precise (TaskId:27)
@@ -3512,55 +3512,63 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      	C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\LEVELMAP.OBJ (TaskId:27)
                      	C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\WRAPPERS.OBJ (TaskId:27)
                      	C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\GAMEMAIN.OBJ (TaskId:27)
-                     LevelMap.cpp will be compiled because C:\Programming\C++\TerminalGame\LevelMap.cpp was modified at 12/3/2022 4:35:21 PM. (TaskId:27)
-                     Outputs for C:\PROGRAMMING\C++\TERMINALGAME\LEVELMAP.CPP: (TaskId:27)
-                     	C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\LEVELMAP.OBJ (TaskId:27)
+                     Elements.cpp will be compiled because C:\PROGRAMMING\C++\TERMINALGAME\LEVELMAP.HPP was modified at 12/3/2022 5:13:36 PM. (TaskId:27)
+                     Game.cpp will be compiled because C:\PROGRAMMING\C++\TERMINALGAME\LEVELMAP.HPP was modified at 12/3/2022 5:13:36 PM. (TaskId:27)
+                     GameMain.cpp will be compiled because C:\PROGRAMMING\C++\TERMINALGAME\LEVELMAP.HPP was modified at 12/3/2022 5:13:36 PM. (TaskId:27)
+                     LevelMap.cpp will be compiled because C:\PROGRAMMING\C++\TERMINALGAME\LEVELMAP.HPP was modified at 12/3/2022 5:13:36 PM. (TaskId:27)
+                     Wrappers.cpp will be compiled because C:\PROGRAMMING\C++\TERMINALGAME\LEVELMAP.HPP was modified at 12/3/2022 5:13:36 PM. (TaskId:27)
+                     No output for C:\PROGRAMMING\C++\TERMINALGAME\ELEMENTS.CPP|C:\PROGRAMMING\C++\TERMINALGAME\GAME.CPP|C:\PROGRAMMING\C++\TERMINALGAME\GAMEMAIN.CPP|C:\PROGRAMMING\C++\TERMINALGAME\LEVELMAP.CPP|C:\PROGRAMMING\C++\TERMINALGAME\WRAPPERS.CPP was found in the tracking log; source compilation required. (TaskId:27)
                      Write Tracking Logs: (TaskId:27)
                      	x64\Debug\TerminalGame.tlog\CL.write.1.tlog (TaskId:27)
                      Environment Variables passed to tool: (TaskId:27)
-                       VS_UNICODE_OUTPUT=1176 (TaskId:27)
-                     C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe /c /IC:\Programming\C++\ExternalLibraries\SDL2\include /I"C:\Programming\C++\ExternalLibraries\SDL2_ttf-2.20.1\include" /I"C:\Programming\C++\ExternalLibraries\SDL2_image-2.6.2\include" /Zi /nologo /W1 /WX- /diagnostics:column /O2 /Gm- /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++20 /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W1 /Gd /TP /FC /errorReport:prompt LevelMap.cpp (TaskId:27)
+                       VS_UNICODE_OUTPUT=2020 (TaskId:27)
+                     C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe /c /IC:\Programming\C++\ExternalLibraries\SDL2\include /I"C:\Programming\C++\ExternalLibraries\SDL2_ttf-2.20.1\include" /I"C:\Programming\C++\ExternalLibraries\SDL2_image-2.6.2\include" /Zi /nologo /W1 /WX- /diagnostics:column /O2 /Gm- /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++20 /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W1 /Gd /TP /FC /errorReport:prompt Elements.cpp Game.cpp GameMain.cpp LevelMap.cpp Wrappers.cpp (TaskId:27)
                      Tracking command: (TaskId:27)
-                     C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.tlog /r C:\PROGRAMMING\C++\TERMINALGAME\LEVELMAP.CPP /b MSBuildConsole_CancelEventae9eec66be8d4702a801cebd8a425e76  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe"  /c /IC:\Programming\C++\ExternalLibraries\SDL2\include /I"C:\Programming\C++\ExternalLibraries\SDL2_ttf-2.20.1\include" /I"C:\Programming\C++\ExternalLibraries\SDL2_image-2.6.2\include" /Zi /nologo /W1 /WX- /diagnostics:column /O2 /Gm- /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++20 /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W1 /Gd /TP /FC /errorReport:prompt LevelMap.cpp (TaskId:27)
+                     C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.tlog /r "C:\PROGRAMMING\C++\TERMINALGAME\ELEMENTS.CPP|C:\PROGRAMMING\C++\TERMINALGAME\GAME.CPP|C:\PROGRAMMING\C++\TERMINALGAME\GAMEMAIN.CPP|C:\PROGRAMMING\C++\TERMINALGAME\LEVELMAP.CPP|C:\PROGRAMMING\C++\TERMINALGAME\WRAPPERS.CPP" /b MSBuildConsole_CancelEventeb87b99bf0d6488583b3ff87fdde0eed  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe"  /c /IC:\Programming\C++\ExternalLibraries\SDL2\include /I"C:\Programming\C++\ExternalLibraries\SDL2_ttf-2.20.1\include" /I"C:\Programming\C++\ExternalLibraries\SDL2_image-2.6.2\include" /Zi /nologo /W1 /WX- /diagnostics:column /O2 /Gm- /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++20 /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W1 /Gd /TP /FC /errorReport:prompt Elements.cpp Game.cpp GameMain.cpp LevelMap.cpp Wrappers.cpp (TaskId:27)
+                     Elements.cpp (TaskId:27)
+                     Game.cpp (TaskId:27)
+                     GameMain.cpp (TaskId:27)
                      LevelMap.cpp (TaskId:27)
+                     Wrappers.cpp (TaskId:27)
+                     Generating Code... (TaskId:27)
                    Done executing task "CL". (TaskId:27)
-16:35:27.486     1>Done building target "ClCompile" in project "TerminalGame.vcxproj".: (TargetId:54)
+17:13:40.647     1>Done building target "ClCompile" in project "TerminalGame.vcxproj".: (TargetId:54)
                    Target "RunSelectedFileNativeCodeAnalysis" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
                    Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Elements.cpp;Game.cpp;LevelMap.cpp;...' != '' and 'false' == 'True').
                    Target "NoAnalysisToolEnabledWarning" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='false' AND '$(EnableClangTidyCodeAnalysis)'=='false') was evaluated as ('false'=='true' AND 'true'=='false' AND 'false'=='false').
                    Target "RunSelectedFileClangTidy" skipped, due to false condition; ('$(RunClangCppAnalysis)'=='true' AND '$(SelectedFiles)'!='') was evaluated as ('false'=='true' AND ''!='').
                    Target "MicrosoftAnalysisIncompatiableWithClangCl" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='true' AND '$(UseClangCl)'=='true') was evaluated as ('false'=='true' AND 'true'=='true' AND ''=='true').
-16:35:27.487     1>Target "AfterClCompile: (TargetId:55)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
-16:35:27.487     1>Done building target "AfterClCompile" in project "TerminalGame.vcxproj".: (TargetId:55)
-16:35:27.487     1>Target "_ClCompile: (TargetId:56)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildCompileAction" depends on it):
-16:35:27.487     1>Done building target "_ClCompile" in project "TerminalGame.vcxproj".: (TargetId:56)
+17:13:40.647     1>Target "AfterClCompile: (TargetId:55)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ClCompile" depends on it):
+17:13:40.647     1>Done building target "AfterClCompile" in project "TerminalGame.vcxproj".: (TargetId:55)
+17:13:40.647     1>Target "_ClCompile: (TargetId:56)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildCompileAction" depends on it):
+17:13:40.647     1>Done building target "_ClCompile" in project "TerminalGame.vcxproj".: (TargetId:56)
                    Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
-16:35:27.487     1>Target "BeforeResourceCompile: (TargetId:57)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ResourceCompile" depends on it):
-16:35:27.487     1>Done building target "BeforeResourceCompile" in project "TerminalGame.vcxproj".: (TargetId:57)
-16:35:27.487     1>Target "MakeDirsForResourceCompile: (TargetId:58)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ResourceCompile" depends on it):
+17:13:40.648     1>Target "BeforeResourceCompile: (TargetId:57)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ResourceCompile" depends on it):
+17:13:40.648     1>Done building target "BeforeResourceCompile" in project "TerminalGame.vcxproj".: (TargetId:57)
+17:13:40.648     1>Target "MakeDirsForResourceCompile: (TargetId:58)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ResourceCompile" depends on it):
                    Task "MakeDir" (TaskId:28)
                    Done executing task "MakeDir". (TaskId:28)
-16:35:27.487     1>Done building target "MakeDirsForResourceCompile" in project "TerminalGame.vcxproj".: (TargetId:58)
+17:13:40.648     1>Done building target "MakeDirsForResourceCompile" in project "TerminalGame.vcxproj".: (TargetId:58)
                    Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
-16:35:27.487     1>Target "AfterResourceCompile: (TargetId:59)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ResourceCompile" depends on it):
-16:35:27.487     1>Done building target "AfterResourceCompile" in project "TerminalGame.vcxproj".: (TargetId:59)
-16:35:27.487     1>Target "_ResourceCompile: (TargetId:60)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildCompileAction" depends on it):
-16:35:27.487     1>Done building target "_ResourceCompile" in project "TerminalGame.vcxproj".: (TargetId:60)
+17:13:40.648     1>Target "AfterResourceCompile: (TargetId:59)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_ResourceCompile" depends on it):
+17:13:40.648     1>Done building target "AfterResourceCompile" in project "TerminalGame.vcxproj".: (TargetId:59)
+17:13:40.648     1>Target "_ResourceCompile: (TargetId:60)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildCompileAction" depends on it):
+17:13:40.648     1>Done building target "_ResourceCompile" in project "TerminalGame.vcxproj".: (TargetId:60)
                    Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
                    Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
-16:35:27.487     1>Target "AfterBuildCompileEvent: (TargetId:61)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildCompileAction" depends on it):
-16:35:27.487     1>Done building target "AfterBuildCompileEvent" in project "TerminalGame.vcxproj".: (TargetId:61)
-16:35:27.487     1>Target "_BuildCompileAction: (TargetId:62)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildCompile" depends on it):
-16:35:27.487     1>Done building target "_BuildCompileAction" in project "TerminalGame.vcxproj".: (TargetId:62)
-16:35:27.487     1>Target "BuildCompile: (TargetId:63)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
-16:35:27.487     1>Done building target "BuildCompile" in project "TerminalGame.vcxproj".: (TargetId:63)
+17:13:40.648     1>Target "AfterBuildCompileEvent: (TargetId:61)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildCompileAction" depends on it):
+17:13:40.648     1>Done building target "AfterBuildCompileEvent" in project "TerminalGame.vcxproj".: (TargetId:61)
+17:13:40.648     1>Target "_BuildCompileAction: (TargetId:62)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildCompile" depends on it):
+17:13:40.648     1>Done building target "_BuildCompileAction" in project "TerminalGame.vcxproj".: (TargetId:62)
+17:13:40.648     1>Target "BuildCompile: (TargetId:63)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
+17:13:40.648     1>Done building target "BuildCompile" in project "TerminalGame.vcxproj".: (TargetId:63)
                    Target "PrepareProjectReferences" skipped. Previously built successfully.
-16:35:27.487     1>Target "BuildLinkTraverse: (TargetId:64)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildLink" depends on it):
+17:13:40.648     1>Target "BuildLinkTraverse: (TargetId:64)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildLink" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
-16:35:27.487     1>Done building target "BuildLinkTraverse" in project "TerminalGame.vcxproj".: (TargetId:64)
+17:13:40.648     1>Done building target "BuildLinkTraverse" in project "TerminalGame.vcxproj".: (TargetId:64)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
-16:35:27.487     1>Target "ComputeLegacyManifestEmbedding: (TargetId:65)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.648     1>Target "ComputeLegacyManifestEmbedding: (TargetId:65)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
                    Added Item(s): 
                        Manifest=
                            temp
@@ -3588,15 +3596,15 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                    UpdateFileHashes=false
                                    VerboseOutput=true
                                    _LocalVariable=true
-16:35:27.487     1>Done building target "ComputeLegacyManifestEmbedding" in project "TerminalGame.vcxproj".: (TargetId:65)
-16:35:27.487     1>Target "BeforeLink: (TargetId:66)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
-16:35:27.487     1>Done building target "BeforeLink" in project "TerminalGame.vcxproj".: (TargetId:66)
-16:35:27.487     1>Target "ComputeRCOutputs: (TargetId:67)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
-16:35:27.487     1>Done building target "ComputeRCOutputs" in project "TerminalGame.vcxproj".: (TargetId:67)
-16:35:27.487     1>Target "ComputeRCGeneratedLinkInputs: (TargetId:68)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
-16:35:27.487     1>Done building target "ComputeRCGeneratedLinkInputs" in project "TerminalGame.vcxproj".: (TargetId:68)
-16:35:27.487     1>Target "ComputeManifestGeneratedLinkerInputs: (TargetId:69)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
-16:35:27.487     1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "TerminalGame.vcxproj".: (TargetId:69)
+17:13:40.648     1>Done building target "ComputeLegacyManifestEmbedding" in project "TerminalGame.vcxproj".: (TargetId:65)
+17:13:40.648     1>Target "BeforeLink: (TargetId:66)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.648     1>Done building target "BeforeLink" in project "TerminalGame.vcxproj".: (TargetId:66)
+17:13:40.648     1>Target "ComputeRCOutputs: (TargetId:67)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
+17:13:40.648     1>Done building target "ComputeRCOutputs" in project "TerminalGame.vcxproj".: (TargetId:67)
+17:13:40.648     1>Target "ComputeRCGeneratedLinkInputs: (TargetId:68)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.648     1>Done building target "ComputeRCGeneratedLinkInputs" in project "TerminalGame.vcxproj".: (TargetId:68)
+17:13:40.648     1>Target "ComputeManifestGeneratedLinkerInputs: (TargetId:69)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.648     1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "TerminalGame.vcxproj".: (TargetId:69)
                    Target "ComputeCustomBuildOutput" skipped. Previously built successfully.
                    Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
                    Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
@@ -3604,7 +3612,7 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Target "ComputeReferenceCLInput" skipped. Previously built successfully.
                    Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
                    Target "FixupCLCompileOptions" skipped. Previously built successfully.
-16:35:27.487     1>Target "ComputeCLOutputs: (TargetId:70)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
+17:13:40.648     1>Target "ComputeCLOutputs: (TargetId:70)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
                    Added Item(s): 
                        Obj=
                            x64\Debug\Elements.obj
@@ -4022,8 +4030,8 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                    WholeProgramOptimization=false
                                    WinRTNoStdLib=false
                                    XMLDocumentationFileName=x64\Debug\
-16:35:27.488     1>Done building target "ComputeCLOutputs" in project "TerminalGame.vcxproj".: (TargetId:70)
-16:35:27.488     1>Target "ComputeCLGeneratedLinkInputs: (TargetId:71)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.648     1>Done building target "ComputeCLOutputs" in project "TerminalGame.vcxproj".: (TargetId:70)
+17:13:40.648     1>Target "ComputeCLGeneratedLinkInputs: (TargetId:71)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
                    Added Item(s): 
                        Link=
                            x64\Debug\Elements.obj
@@ -4231,11 +4239,11 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                    TypeLibraryResourceID=1
                                    UACExecutionLevel=AsInvoker
                                    UACUIAccess=false
-16:35:27.488     1>Done building target "ComputeCLGeneratedLinkInputs" in project "TerminalGame.vcxproj".: (TargetId:71)
-16:35:27.488     1>Target "ComputeLinkInputsFromProject: (TargetId:72)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
-16:35:27.488     1>Done building target "ComputeLinkInputsFromProject" in project "TerminalGame.vcxproj".: (TargetId:72)
+17:13:40.648     1>Done building target "ComputeCLGeneratedLinkInputs" in project "TerminalGame.vcxproj".: (TargetId:71)
+17:13:40.648     1>Target "ComputeLinkInputsFromProject: (TargetId:72)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.648     1>Done building target "ComputeLinkInputsFromProject" in project "TerminalGame.vcxproj".: (TargetId:72)
                    Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
-16:35:27.488     1>Target "ComputeManifestInputsTargets: (TargetId:73)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.648     1>Target "ComputeManifestInputsTargets: (TargetId:73)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
                    Added Item(s): 
                        Manifest=
                            temp
@@ -4264,9 +4272,9 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                    UpdateFileHashes=false
                                    VerboseOutput=true
                                    _LocalVariable=true
-16:35:27.488     1>Done building target "ComputeManifestInputsTargets" in project "TerminalGame.vcxproj".: (TargetId:73)
+17:13:40.648     1>Done building target "ComputeManifestInputsTargets" in project "TerminalGame.vcxproj".: (TargetId:73)
                    Target "ManifestResourceCompile" skipped, due to false condition; ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '') was evaluated as ('MT' == 'LINK' and '' != '').
-16:35:27.488     1>Target "AssignTargetPaths: (TargetId:74)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareResourceNames" depends on it):
+17:13:40.649     1>Target "AssignTargetPaths: (TargetId:74)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareResourceNames" depends on it):
                    Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "AssignTargetPath" (TaskId:29)
                      Task Parameter:RootFolder=C:\Programming\C++\TerminalGame (TaskId:29)
@@ -4281,9 +4289,9 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      Task Parameter:RootFolder=C:\Programming\C++\TerminalGame (TaskId:32)
                    Done executing task "AssignTargetPath". (TaskId:32)
                    Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
-16:35:27.489     1>Done building target "AssignTargetPaths" in project "TerminalGame.vcxproj".: (TargetId:74)
+17:13:40.649     1>Done building target "AssignTargetPaths" in project "TerminalGame.vcxproj".: (TargetId:74)
                    Target "AssignTargetPaths" skipped. Previously built successfully.
-16:35:27.489     1>Target "SplitResourcesByCulture: (TargetId:75)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareResourceNames" depends on it):
+17:13:40.649     1>Target "SplitResourcesByCulture: (TargetId:75)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareResourceNames" depends on it):
                    Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
                    Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
                    Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
@@ -4291,13 +4299,13 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "AssignCulture" (TaskId:33)
                    Done executing task "AssignCulture". (TaskId:33)
-16:35:27.489     1>Done building target "SplitResourcesByCulture" in project "TerminalGame.vcxproj".: (TargetId:75)
+17:13:40.649     1>Done building target "SplitResourcesByCulture" in project "TerminalGame.vcxproj".: (TargetId:75)
                    Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
-16:35:27.489     1>Target "CreateCustomManifestResourceNames: (TargetId:76)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareResourceNames" depends on it):
-16:35:27.489     1>Done building target "CreateCustomManifestResourceNames" in project "TerminalGame.vcxproj".: (TargetId:76)
-16:35:27.489     1>Target "PrepareResourceNames: (TargetId:77)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
-16:35:27.489     1>Done building target "PrepareResourceNames" in project "TerminalGame.vcxproj".: (TargetId:77)
-16:35:27.489     1>Target "MakeDirsForLink: (TargetId:78)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.649     1>Target "CreateCustomManifestResourceNames: (TargetId:76)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareResourceNames" depends on it):
+17:13:40.649     1>Done building target "CreateCustomManifestResourceNames" in project "TerminalGame.vcxproj".: (TargetId:76)
+17:13:40.649     1>Target "PrepareResourceNames: (TargetId:77)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.649     1>Done building target "PrepareResourceNames" in project "TerminalGame.vcxproj".: (TargetId:77)
+17:13:40.649     1>Target "MakeDirsForLink: (TargetId:78)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
                    Set Property: _LinkImportLibrary=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.lib
                    Added Item(s): _LinkImportLibraryFile=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.lib
                    Added Item(s): LinkDirsToMake=C:\Programming\C++\TerminalGame\x64\Debug
@@ -4319,25 +4327,25 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                            C:\Programming\C++\TerminalGame\x64\Debug
                            C:\Programming\C++\TerminalGame\x64\Debug\
                    Removed Item(s): _LinkImportLibraryFile=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.lib
-16:35:27.490     1>Done building target "MakeDirsForLink" in project "TerminalGame.vcxproj".: (TargetId:78)
-16:35:27.490     1>Target "DoLinkOutputFilesMatch: (TargetId:79)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.649     1>Done building target "MakeDirsForLink" in project "TerminalGame.vcxproj".: (TargetId:78)
+17:13:40.649     1>Target "DoLinkOutputFilesMatch: (TargetId:79)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
                    Added Item(s): _OutputFileFromLink=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe
                    Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe' == '').
                    Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe' != '' and 'C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe' != 'C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe').
                    Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe' != '' and '.exe' != '' and '.exe' != '.exe').
                    Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe' != '' and 'TerminalGame' != '' and 'TerminalGame' != 'TerminalGame').
                    Task "VCMessage" skipped, due to false condition; ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet')) was evaluated as ('' != '' and ('Console' == '' or 'Console' == 'NotSet')).
-16:35:27.490     1>Done building target "DoLinkOutputFilesMatch" in project "TerminalGame.vcxproj".: (TargetId:79)
-16:35:27.490     1>Target "PreLinkEvent: (TargetId:80)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.650     1>Done building target "DoLinkOutputFilesMatch" in project "TerminalGame.vcxproj".: (TargetId:79)
+17:13:40.650     1>Target "PreLinkEvent: (TargetId:80)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
                    Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
                    Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
-16:35:27.490     1>Done building target "PreLinkEvent" in project "TerminalGame.vcxproj".: (TargetId:80)
-16:35:27.490     1>Target "ComputeLinkSwitches: (TargetId:81)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Link" depends on it):
+17:13:40.650     1>Done building target "PreLinkEvent" in project "TerminalGame.vcxproj".: (TargetId:80)
+17:13:40.650     1>Target "ComputeLinkSwitches: (TargetId:81)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Link" depends on it):
                    Set Property: Link_MinimalRebuildFromTracking=true
                    Set Property: LinkToolArchitecture=Native64Bit
                    Set Property: _GenerateWindowsMetadata=
-16:35:27.490     1>Done building target "ComputeLinkSwitches" in project "TerminalGame.vcxproj".: (TargetId:81)
-16:35:27.490     1>Target "Link: (TargetId:82)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.650     1>Done building target "ComputeLinkSwitches" in project "TerminalGame.vcxproj".: (TargetId:81)
+17:13:40.650     1>Target "Link: (TargetId:82)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
                    Using "Link" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
                    Task "Link" (TaskId:35)
                      Task Parameter:OutputFile=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe (TaskId:35)
@@ -4726,16 +4734,16 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      	C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.32.31326\LIB\X64\LIBVCRUNTIMED.LIB (TaskId:35)
                      	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.19041.0\UCRT\X64\LIBUCRTD.LIB (TaskId:35)
                      	C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\VC143.PDB (TaskId:35)
-                     Source compilation required: input C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\LEVELMAP.OBJ is newer than output C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\TERMINALGAME.PDB. (TaskId:35)
+                     Source compilation required: input C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\ELEMENTS.OBJ is newer than output C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\TERMINALGAME.PDB. (TaskId:35)
                      Environment Variables passed to tool: (TaskId:35)
-                       VS_UNICODE_OUTPUT=1860 (TaskId:35)
+                       VS_UNICODE_OUTPUT=1312 (TaskId:35)
                      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe" /NOLOGO /LIBPATH:"C:\Programming\C++\ExternalLibraries\SDL2_ttf-2.20.1\lib\x64" /LIBPATH:C:\Programming\C++\ExternalLibraries\SDL2\lib\x64 /LIBPATH:"C:\Programming\C++\ExternalLibraries\SDL2_image-2.6.2\lib\x64" SDL2.lib SDL2main.lib SDL2_ttf.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FULL /PDB:"C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.lib" /MACHINE:X64 x64\Debug\Elements.obj
                      x64\Debug\Game.obj
                      x64\Debug\LevelMap.obj
                      x64\Debug\Wrappers.obj
                      x64\Debug\GameMain.obj (TaskId:35)
                      Tracking command: (TaskId:35)
-                     C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.tlog /r "C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\ELEMENTS.OBJ|C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\GAME.OBJ|C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\GAMEMAIN.OBJ|C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\LEVELMAP.OBJ|C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\WRAPPERS.OBJ" /b MSBuildConsole_CancelEvent8be8055cfd244fb3a74b443d1360c741  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe" /NOLOGO /LIBPATH:"C:\Programming\C++\ExternalLibraries\SDL2_ttf-2.20.1\lib\x64" /LIBPATH:C:\Programming\C++\ExternalLibraries\SDL2\lib\x64 /LIBPATH:"C:\Programming\C++\ExternalLibraries\SDL2_image-2.6.2\lib\x64" SDL2.lib SDL2main.lib SDL2_ttf.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FULL /PDB:"C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.lib" /MACHINE:X64 x64\Debug\Elements.obj
+                     C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.tlog /r "C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\ELEMENTS.OBJ|C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\GAME.OBJ|C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\GAMEMAIN.OBJ|C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\LEVELMAP.OBJ|C:\PROGRAMMING\C++\TERMINALGAME\X64\DEBUG\WRAPPERS.OBJ" /b MSBuildConsole_CancelEvent0a303edef5da4158abbc4fd18e4c3ca9  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe" /NOLOGO /LIBPATH:"C:\Programming\C++\ExternalLibraries\SDL2_ttf-2.20.1\lib\x64" /LIBPATH:C:\Programming\C++\ExternalLibraries\SDL2\lib\x64 /LIBPATH:"C:\Programming\C++\ExternalLibraries\SDL2_image-2.6.2\lib\x64" SDL2.lib SDL2main.lib SDL2_ttf.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FULL /PDB:"C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.lib" /MACHINE:X64 x64\Debug\Elements.obj
                      x64\Debug\Game.obj
                      x64\Debug\LevelMap.obj
                      x64\Debug\Wrappers.obj
@@ -4753,36 +4761,36 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
                                 %(Link.GenerateDebugInformation) == 'true' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('MT' != 'LINK' or '' != 'true' or 'False' == 'true') and
                                 DebugFull == 'true' and  != '').
-16:35:27.654     1>Done building target "Link" in project "TerminalGame.vcxproj".: (TargetId:82)
+17:13:40.768     1>Done building target "Link" in project "TerminalGame.vcxproj".: (TargetId:82)
                    Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
                    Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false' and '$(CLRSupport)'!='NetCore') was evaluated as ('false'!='' and 'false'!='false' and 'false'!='NetCore').
                    Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
-16:35:27.654     1>Target "ComputeLinkImportLibraryOutputsForClean: (TargetId:83)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.769     1>Target "ComputeLinkImportLibraryOutputsForClean: (TargetId:83)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
                    Task "WriteLinesToFile" skipped, due to false condition; ('@(_LinkSecondaryOutput)' != '') was evaluated as ('' != '').
-16:35:27.655     1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "TerminalGame.vcxproj".: (TargetId:83)
-16:35:27.655     1>Target "AfterLink: (TargetId:84)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
-16:35:27.655     1>Done building target "AfterLink" in project "TerminalGame.vcxproj".: (TargetId:84)
-16:35:27.655     1>Target "_Link: (TargetId:85)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
-16:35:27.655     1>Done building target "_Link" in project "TerminalGame.vcxproj".: (TargetId:85)
-16:35:27.655     1>Target "_ALink: (TargetId:86)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
-16:35:27.655     1>Done building target "_ALink" in project "TerminalGame.vcxproj".: (TargetId:86)
+17:13:40.769     1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "TerminalGame.vcxproj".: (TargetId:83)
+17:13:40.769     1>Target "AfterLink: (TargetId:84)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_Link" depends on it):
+17:13:40.769     1>Done building target "AfterLink" in project "TerminalGame.vcxproj".: (TargetId:84)
+17:13:40.769     1>Target "_Link: (TargetId:85)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.769     1>Done building target "_Link" in project "TerminalGame.vcxproj".: (TargetId:85)
+17:13:40.769     1>Target "_ALink: (TargetId:86)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.769     1>Done building target "_ALink" in project "TerminalGame.vcxproj".: (TargetId:86)
                    Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
-16:35:27.655     1>Target "_Manifest: (TargetId:87)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.769     1>Target "_Manifest: (TargetId:87)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
                    Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
-16:35:27.655     1>Done building target "_Manifest" in project "TerminalGame.vcxproj".: (TargetId:87)
-16:35:27.655     1>Target "RegisterOutput: (TargetId:88)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.769     1>Done building target "_Manifest" in project "TerminalGame.vcxproj".: (TargetId:87)
+17:13:40.769     1>Target "RegisterOutput: (TargetId:88)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'!='true').
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'=='true').
                    Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
-16:35:27.655     1>Done building target "RegisterOutput" in project "TerminalGame.vcxproj".: (TargetId:88)
+17:13:40.769     1>Done building target "RegisterOutput" in project "TerminalGame.vcxproj".: (TargetId:88)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
-16:35:27.655     1>Target "ResolvedXDCMake: (TargetId:89)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_XdcMake" depends on it):
+17:13:40.769     1>Target "ResolvedXDCMake: (TargetId:89)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_XdcMake" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
-16:35:27.655     1>Done building target "ResolvedXDCMake" in project "TerminalGame.vcxproj".: (TargetId:89)
-16:35:27.655     1>Target "ComputeCLCompileGeneratedXDCFiles: (TargetId:90)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_XdcMake" depends on it):
+17:13:40.769     1>Done building target "ResolvedXDCMake" in project "TerminalGame.vcxproj".: (TargetId:89)
+17:13:40.769     1>Target "ComputeCLCompileGeneratedXDCFiles: (TargetId:90)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_XdcMake" depends on it):
                    Added Item(s): 
                        XdcMake=
                            temp
@@ -4805,26 +4813,26 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                                    OutputFile=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.xml
                                    SuppressStartupBanner=true
                                    TrackerLogDirectory=x64\Debug\TerminalGame.tlog\
-16:35:27.655     1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "TerminalGame.vcxproj".: (TargetId:90)
-16:35:27.655     1>Target "MakeDirsForXdcMake: (TargetId:91)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_XdcMake" depends on it):
+17:13:40.769     1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "TerminalGame.vcxproj".: (TargetId:90)
+17:13:40.769     1>Target "MakeDirsForXdcMake: (TargetId:91)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_XdcMake" depends on it):
                    Task "MakeDir" (TaskId:37)
                    Done executing task "MakeDir". (TaskId:37)
-16:35:27.655     1>Done building target "MakeDirsForXdcMake" in project "TerminalGame.vcxproj".: (TargetId:91)
+17:13:40.769     1>Done building target "MakeDirsForXdcMake" in project "TerminalGame.vcxproj".: (TargetId:91)
                    Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
-16:35:27.655     1>Target "_XdcMake: (TargetId:92)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
-16:35:27.655     1>Done building target "_XdcMake" in project "TerminalGame.vcxproj".: (TargetId:92)
-16:35:27.655     1>Target "ComputeCLCompileGeneratedSbrFiles: (TargetId:93)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BscMake" depends on it):
-16:35:27.655     1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "TerminalGame.vcxproj".: (TargetId:93)
-16:35:27.655     1>Target "MakeDirsForBscMake: (TargetId:94)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BscMake" depends on it):
+17:13:40.769     1>Target "_XdcMake: (TargetId:92)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.769     1>Done building target "_XdcMake" in project "TerminalGame.vcxproj".: (TargetId:92)
+17:13:40.769     1>Target "ComputeCLCompileGeneratedSbrFiles: (TargetId:93)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BscMake" depends on it):
+17:13:40.769     1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "TerminalGame.vcxproj".: (TargetId:93)
+17:13:40.769     1>Target "MakeDirsForBscMake: (TargetId:94)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BscMake" depends on it):
                    Task "MakeDir" (TaskId:38)
                    Done executing task "MakeDir". (TaskId:38)
-16:35:27.656     1>Done building target "MakeDirsForBscMake" in project "TerminalGame.vcxproj".: (TargetId:94)
+17:13:40.769     1>Done building target "MakeDirsForBscMake" in project "TerminalGame.vcxproj".: (TargetId:94)
                    Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
                    Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-16:35:27.656     1>Target "_BscMake: (TargetId:95)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
-16:35:27.656     1>Done building target "_BscMake" in project "TerminalGame.vcxproj".: (TargetId:95)
+17:13:40.769     1>Target "_BscMake: (TargetId:95)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.769     1>Done building target "_BscMake" in project "TerminalGame.vcxproj".: (TargetId:95)
                    Target "PrepareForBuild" skipped. Previously built successfully.
-16:35:27.656     1>Target "BuiltProjectOutputGroup: (TargetId:96)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CreateRecipeFile" depends on it):
+17:13:40.769     1>Target "BuiltProjectOutputGroup: (TargetId:96)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CreateRecipeFile" depends on it):
                    Added Item(s): 
                        _BuiltProjectOutputGroupOutputIntermediate=
                            C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe
@@ -4834,26 +4842,26 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                            C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe
                                    FinalOutputPath=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe
                                    OriginalItemSpec=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe
-16:35:27.656     1>Done building target "BuiltProjectOutputGroup" in project "TerminalGame.vcxproj".: (TargetId:96)
+17:13:40.769     1>Done building target "BuiltProjectOutputGroup" in project "TerminalGame.vcxproj".: (TargetId:96)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "PrepareResourceNames" skipped. Previously built successfully.
-16:35:27.656     1>Target "SatelliteDllsProjectOutputGroup: (TargetId:97)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CreateRecipeFile" depends on it):
-16:35:27.656     1>Done building target "SatelliteDllsProjectOutputGroup" in project "TerminalGame.vcxproj".: (TargetId:97)
+17:13:40.769     1>Target "SatelliteDllsProjectOutputGroup: (TargetId:97)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CreateRecipeFile" depends on it):
+17:13:40.769     1>Done building target "SatelliteDllsProjectOutputGroup" in project "TerminalGame.vcxproj".: (TargetId:97)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "AssignTargetPaths" skipped. Previously built successfully.
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "AssignTargetPaths" skipped. Previously built successfully.
-16:35:27.656     1>Target "MakeDirsForFxc: (TargetId:98)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ContentFilesProjectOutputGroup" depends on it):
+17:13:40.770     1>Target "MakeDirsForFxc: (TargetId:98)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "ContentFilesProjectOutputGroup" depends on it):
                    Task "MakeDir" (TaskId:39)
                    Done executing task "MakeDir". (TaskId:39)
-16:35:27.656     1>Done building target "MakeDirsForFxc" in project "TerminalGame.vcxproj".: (TargetId:98)
+17:13:40.770     1>Done building target "MakeDirsForFxc" in project "TerminalGame.vcxproj".: (TargetId:98)
                    Target "_CreateCopyFileItems" skipped, due to false condition; ('@(CopyFileToFolders)' != '') was evaluated as ('' != '').
-16:35:27.656     1>Target "ContentFilesProjectOutputGroup: (TargetId:99)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CreateRecipeFile" depends on it):
+17:13:40.770     1>Target "ContentFilesProjectOutputGroup: (TargetId:99)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CreateRecipeFile" depends on it):
                    Task "AssignTargetPath" skipped, due to false condition; ('@(ContentFilesProjectOutputGroupOutputFullPath)' != '' and '%(ContentFilesProjectOutputGroupOutputFullPath.RootFolder)' != '') was evaluated as ('' != '' and '' != '').
                    Task "AssignTargetPath" skipped, due to false condition; ('@(ContentFilesProjectOutputGroupOutputFullPath)' != '' and '%(ContentFilesProjectOutputGroupOutputFullPath.RootFolder)' == '') was evaluated as ('' != '' and '' == '').
-16:35:27.656     1>Done building target "ContentFilesProjectOutputGroup" in project "TerminalGame.vcxproj".: (TargetId:99)
+17:13:40.770     1>Done building target "ContentFilesProjectOutputGroup" in project "TerminalGame.vcxproj".: (TargetId:99)
                    Target "GetReferencedVCProjectsInfo" skipped. Previously built successfully.
-16:35:27.656     1>Target "CreateRecipeFile: (TargetId:100)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.770     1>Target "CreateRecipeFile: (TargetId:100)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
                    Using "GenerateDesktopDeployRecipe" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
                    Task "GenerateDesktopDeployRecipe" (TaskId:40)
                      Task Parameter:
@@ -4864,72 +4872,72 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      Task Parameter:OutputFile=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe.recipe (TaskId:40)
                      Task Parameter:ProjectDir=C:\Programming\C++\TerminalGame\ (TaskId:40)
                    Done executing task "GenerateDesktopDeployRecipe". (TaskId:40)
-16:35:27.657     1>Done building target "CreateRecipeFile" in project "TerminalGame.vcxproj".: (TargetId:100)
-16:35:27.657     1>Target "_GenerateSatelliteAssemblyInputs: (TargetId:101)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
+17:13:40.770     1>Done building target "CreateRecipeFile" in project "TerminalGame.vcxproj".: (TargetId:100)
+17:13:40.770     1>Target "_GenerateSatelliteAssemblyInputs: (TargetId:101)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
                    Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
                    Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
-16:35:27.657     1>Done building target "_GenerateSatelliteAssemblyInputs" in project "TerminalGame.vcxproj".: (TargetId:101)
+17:13:40.770     1>Done building target "_GenerateSatelliteAssemblyInputs" in project "TerminalGame.vcxproj".: (TargetId:101)
                    Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
                    Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
-16:35:27.658     1>Target "CreateSatelliteAssemblies: (TargetId:102)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
-16:35:27.658     1>Done building target "CreateSatelliteAssemblies" in project "TerminalGame.vcxproj".: (TargetId:102)
+17:13:40.770     1>Target "CreateSatelliteAssemblies: (TargetId:102)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.770     1>Done building target "CreateSatelliteAssemblies" in project "TerminalGame.vcxproj".: (TargetId:102)
                    Target "CopyLocalNativeReference" skipped, due to false condition; ('$(CopyLocalProjectReference)' == 'true') was evaluated as ('false' == 'true').
-16:35:27.658     1>Target "_Appverifier: (TargetId:103)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
-16:35:27.658     1>Done building target "_Appverifier" in project "TerminalGame.vcxproj".: (TargetId:103)
-16:35:27.658     1>Target "_Deploy: (TargetId:104)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
-16:35:27.658     1>Done building target "_Deploy" in project "TerminalGame.vcxproj".: (TargetId:104)
+17:13:40.770     1>Target "_Appverifier: (TargetId:103)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.770     1>Done building target "_Appverifier" in project "TerminalGame.vcxproj".: (TargetId:103)
+17:13:40.770     1>Target "_Deploy: (TargetId:104)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.770     1>Done building target "_Deploy" in project "TerminalGame.vcxproj".: (TargetId:104)
                    Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
                    Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
                    Target "AssignTargetPaths" skipped. Previously built successfully.
                    Target "AssignProjectConfiguration" skipped. Previously built successfully.
                    Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
                    Target "_GetProjectReferenceTargetFrameworkProperties" skipped. Previously built successfully.
-16:35:27.658     1>Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems: (TargetId:105)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+17:13:40.771     1>Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems: (TargetId:105)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
                    Set Property: _GCTODIKeepDuplicates=false
                    Set Property: _GCTODIKeepMetadata=CopyToOutputDirectory;TargetPath
-16:35:27.658     1>Done building target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" in project "TerminalGame.vcxproj".: (TargetId:105)
-16:35:27.658     1>Target "GetCopyToOutputDirectoryXamlAppDefs: (TargetId:106)" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+17:13:40.771     1>Done building target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" in project "TerminalGame.vcxproj".: (TargetId:105)
+17:13:40.771     1>Target "GetCopyToOutputDirectoryXamlAppDefs: (TargetId:106)" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
                    Task "AssignTargetPath" (TaskId:41)
                      Task Parameter:RootFolder=C:\Programming\C++\TerminalGame (TaskId:41)
                    Done executing task "AssignTargetPath". (TaskId:41)
-16:35:27.658     1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "TerminalGame.vcxproj".: (TargetId:106)
-16:35:27.658     1>Target "GetCopyToOutputDirectoryItems: (TargetId:107)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+17:13:40.771     1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "TerminalGame.vcxproj".: (TargetId:106)
+17:13:40.771     1>Target "GetCopyToOutputDirectoryItems: (TargetId:107)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
                    Using "CallTarget" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "CallTarget" (TaskId:42)
                      Task Parameter:Targets=_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences (TaskId:42)
                    Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" skipped. Previously built successfully.
                    Target "_AddOutputPathToGlobalPropertiesToRemove" skipped. Previously built successfully.
-16:35:27.658     1>Target "_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences: (TargetId:108)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+17:13:40.771     1>Target "_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences: (TargetId:108)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
                    Task "AssignTargetPath" (TaskId:43)
                      Task Parameter:RootFolder=C:\Programming\C++\TerminalGame (TaskId:43)
                    Done executing task "AssignTargetPath". (TaskId:43)
-16:35:27.658     1>Done building target "_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences" in project "TerminalGame.vcxproj".: (TargetId:108)
+17:13:40.771     1>Done building target "_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences" in project "TerminalGame.vcxproj".: (TargetId:108)
                    Done executing task "CallTarget". (TaskId:42)
                    Task "CallTarget" (TaskId:44)
                      Task Parameter:Targets=_GetCopyToOutputDirectoryItemsFromThisProject (TaskId:44)
                    Target "AssignTargetPaths" skipped. Previously built successfully.
                    Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" skipped. Previously built successfully.
-16:35:27.658     1>Target "_GetCopyToOutputDirectoryItemsFromThisProject: (TargetId:109)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+17:13:40.771     1>Target "_GetCopyToOutputDirectoryItemsFromThisProject: (TargetId:109)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
                    Task "AssignTargetPath" (TaskId:45)
                      Task Parameter:RootFolder=C:\Programming\C++\TerminalGame (TaskId:45)
                    Done executing task "AssignTargetPath". (TaskId:45)
-16:35:27.659     1>Done building target "_GetCopyToOutputDirectoryItemsFromThisProject" in project "TerminalGame.vcxproj".: (TargetId:109)
+17:13:40.771     1>Done building target "_GetCopyToOutputDirectoryItemsFromThisProject" in project "TerminalGame.vcxproj".: (TargetId:109)
                    Done executing task "CallTarget". (TaskId:44)
-16:35:27.659     1>Done building target "GetCopyToOutputDirectoryItems" in project "TerminalGame.vcxproj".: (TargetId:107)
+17:13:40.771     1>Done building target "GetCopyToOutputDirectoryItems" in project "TerminalGame.vcxproj".: (TargetId:107)
                    Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
                    Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
-16:35:27.659     1>Target "_CopySourceItemsToOutputDirectory: (TargetId:110)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
-16:35:27.659     1>Done building target "_CopySourceItemsToOutputDirectory" in project "TerminalGame.vcxproj".: (TargetId:110)
+17:13:40.771     1>Target "_CopySourceItemsToOutputDirectory: (TargetId:110)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+17:13:40.771     1>Done building target "_CopySourceItemsToOutputDirectory" in project "TerminalGame.vcxproj".: (TargetId:110)
                    Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
                    Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
-16:35:27.659     1>Target "_CheckForCompileOutputs: (TargetId:111)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+17:13:40.771     1>Target "_CheckForCompileOutputs: (TargetId:111)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
                    Added Item(s): FileWrites=x64\Debug\TerminalGame.exe
                    Set Property: _DocumentationFileProduced=false
                    Set Property: _DebugSymbolsProduced=false
-16:35:27.660     1>Done building target "_CheckForCompileOutputs" in project "TerminalGame.vcxproj".: (TargetId:111)
+17:13:40.771     1>Done building target "_CheckForCompileOutputs" in project "TerminalGame.vcxproj".: (TargetId:111)
                    Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-16:35:27.660     1>Target "CopyFilesToOutputDirectory: (TargetId:112)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareForRun" depends on it):
+17:13:40.771     1>Target "CopyFilesToOutputDirectory: (TargetId:112)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "PrepareForRun" depends on it):
                    Set Property: CreateHardLinksForCopyFilesToOutputDirectoryIfPossible=false
                    Set Property: CreateSymbolicLinksForCopyFilesToOutputDirectoryIfPossible=false
                    Set Property: ErrorIfLinkFailsForCopyFilesToOutputDirectory=false
@@ -4947,23 +4955,23 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
                    Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
                    Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
-16:35:27.660     1>Done building target "CopyFilesToOutputDirectory" in project "TerminalGame.vcxproj".: (TargetId:112)
-16:35:27.660     1>Target "PrepareForRun: (TargetId:113)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
-16:35:27.660     1>Done building target "PrepareForRun" in project "TerminalGame.vcxproj".: (TargetId:113)
+17:13:40.772     1>Done building target "CopyFilesToOutputDirectory" in project "TerminalGame.vcxproj".: (TargetId:112)
+17:13:40.772     1>Target "PrepareForRun: (TargetId:113)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.772     1>Done building target "PrepareForRun" in project "TerminalGame.vcxproj".: (TargetId:113)
                    Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-16:35:27.660     1>Target "PostBuildEvent: (TargetId:114)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
+17:13:40.772     1>Target "PostBuildEvent: (TargetId:114)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "_BuildLinkAction" depends on it):
                    Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
                    Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
-16:35:27.660     1>Done building target "PostBuildEvent" in project "TerminalGame.vcxproj".: (TargetId:114)
-16:35:27.660     1>Target "_BuildLinkAction: (TargetId:115)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildLink" depends on it):
-16:35:27.660     1>Done building target "_BuildLinkAction" in project "TerminalGame.vcxproj".: (TargetId:115)
-16:35:27.660     1>Target "BuildLink: (TargetId:116)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
-16:35:27.660     1>Done building target "BuildLink" in project "TerminalGame.vcxproj".: (TargetId:116)
-16:35:27.660     1>Target "AfterBuild: (TargetId:117)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
-16:35:27.660     1>Done building target "AfterBuild" in project "TerminalGame.vcxproj".: (TargetId:117)
+17:13:40.772     1>Done building target "PostBuildEvent" in project "TerminalGame.vcxproj".: (TargetId:114)
+17:13:40.772     1>Target "_BuildLinkAction: (TargetId:115)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "BuildLink" depends on it):
+17:13:40.772     1>Done building target "_BuildLinkAction" in project "TerminalGame.vcxproj".: (TargetId:115)
+17:13:40.772     1>Target "BuildLink: (TargetId:116)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
+17:13:40.772     1>Done building target "BuildLink" in project "TerminalGame.vcxproj".: (TargetId:116)
+17:13:40.772     1>Target "AfterBuild: (TargetId:117)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
+17:13:40.772     1>Done building target "AfterBuild" in project "TerminalGame.vcxproj".: (TargetId:117)
                    Target "_CheckForCompileOutputs" skipped. Previously built successfully.
                    Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-16:35:27.660     1>Target "_CleanGetCurrentAndPriorFileWrites: (TargetId:118)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "IncrementalClean" depends on it):
+17:13:40.772     1>Target "_CleanGetCurrentAndPriorFileWrites: (TargetId:118)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "IncrementalClean" depends on it):
                    Task "ReadLinesFromFile" (TaskId:46)
                      Task Parameter:File=x64\Debug\TerminalGame.vcxproj.FileListAbsolute.txt (TaskId:46)
                      Output Item(s): _CleanUnfilteredPriorFileWrites=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe (TaskId:46)
@@ -5000,8 +5008,8 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                    Task "RemoveDuplicates" (TaskId:51)
                      Output Item(s): _CleanCurrentFileWrites=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe (TaskId:51)
                    Done executing task "RemoveDuplicates". (TaskId:51)
-16:35:27.661     1>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "TerminalGame.vcxproj".: (TargetId:118)
-16:35:27.661     1>Target "IncrementalClean: (TargetId:119)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
+17:13:40.772     1>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "TerminalGame.vcxproj".: (TargetId:118)
+17:13:40.772     1>Target "IncrementalClean: (TargetId:119)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
                    Task "FindUnderPath" (TaskId:52)
                      Task Parameter:Path=C:\Programming\C++\TerminalGame\x64\Debug\ (TaskId:52)
                      Comparison path is "C:\Programming\C++\TerminalGame\x64\Debug\". (TaskId:52)
@@ -5022,8 +5030,8 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      Output Item(s): _CleanUniqueRemainingFileWritesAfterIncrementalClean=C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe (TaskId:55)
                    Done executing task "RemoveDuplicates". (TaskId:55)
                    Task "WriteLinesToFile" skipped, due to false condition; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') was evaluated as ('C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe'!='C:\Programming\C++\TerminalGame\x64\Debug\TerminalGame.exe').
-16:35:27.662     1>Done building target "IncrementalClean" in project "TerminalGame.vcxproj".: (TargetId:119)
-16:35:27.662     1>Target "FinalizeBuildStatus: (TargetId:120)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
+17:13:40.773     1>Done building target "IncrementalClean" in project "TerminalGame.vcxproj".: (TargetId:119)
+17:13:40.773     1>Target "FinalizeBuildStatus: (TargetId:120)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (target "Build" depends on it):
                    Task "Delete" (TaskId:56)
                      Task Parameter:Files=x64\Debug\TerminalGame.tlog\unsuccessfulbuild (TaskId:56)
                      Deleting file "x64\Debug\TerminalGame.tlog\unsuccessfulbuild". (TaskId:56)
@@ -5032,33 +5040,39 @@ Logging verbosity is set to: Diagnostic.16:35:26.726     1>Project "C:\Programmi
                      Task Parameter:Files=x64\Debug\TerminalGame.tlog\TerminalGame.lastbuildstate (TaskId:57)
                      Touching "x64\Debug\TerminalGame.tlog\TerminalGame.lastbuildstate". (TaskId:57)
                    Done executing task "Touch". (TaskId:57)
-16:35:27.663     1>Done building target "FinalizeBuildStatus" in project "TerminalGame.vcxproj".: (TargetId:120)
+17:13:40.774     1>Done building target "FinalizeBuildStatus" in project "TerminalGame.vcxproj".: (TargetId:120)
                    Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
                    Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-16:35:27.663     1>Target "Build: (TargetId:121)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (entry point):
-16:35:27.663     1>Done building target "Build" in project "TerminalGame.vcxproj".: (TargetId:121)
-16:35:27.663     1>Done Building Project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (Build target(s)).
+17:13:40.774     1>Target "Build: (TargetId:121)" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (entry point):
+17:13:40.774     1>Done building target "Build" in project "TerminalGame.vcxproj".: (TargetId:121)
+17:13:40.774     1>Done Building Project "C:\Programming\C++\TerminalGame\TerminalGame.vcxproj" (Build target(s)).
 
 Project Evaluation Performance Summary:
-       26 ms  C:\Programming\C++\TerminalGame\TerminalGame.vcxproj   1 calls
+       15 ms  C:\Programming\C++\TerminalGame\TerminalGame.vcxproj   1 calls
 
 Project Performance Summary:
-      937 ms  C:\Programming\C++\TerminalGame\TerminalGame.vcxproj   1 calls
-                937 ms  Build                                      1 calls
+     2530 ms  C:\Programming\C++\TerminalGame\TerminalGame.vcxproj   1 calls
+               2530 ms  Build                                      1 calls
 
 Target Performance Summary:
         0 ms  AfterBuildCompileEvent                     1 calls
+        0 ms  RegisterOutput                             1 calls
+        0 ms  _Manifest                                  1 calls
+        0 ms  _ALink                                     1 calls
         0 ms  _Link                                      1 calls
         0 ms  AfterLink                                  1 calls
+        0 ms  ComputeLinkImportLibraryOutputsForClean    1 calls
         0 ms  ComputeLinkSwitches                        1 calls
         0 ms  PreLinkEvent                               1 calls
-        0 ms  DoLinkOutputFilesMatch                     1 calls
+        0 ms  MakeDirsForLink                            1 calls
         0 ms  PrepareResourceNames                       1 calls
         0 ms  CreateCustomManifestResourceNames          1 calls
         0 ms  SplitResourcesByCulture                    1 calls
+        0 ms  AssignTargetPaths                          1 calls
         0 ms  ComputeManifestInputsTargets               1 calls
         0 ms  ComputeLinkInputsFromProject               1 calls
         0 ms  ComputeCLGeneratedLinkInputs               1 calls
+        0 ms  ComputeCLOutputs                           1 calls
         0 ms  ComputeManifestGeneratedLinkerInputs       1 calls
         0 ms  ComputeRCGeneratedLinkInputs               1 calls
         0 ms  ComputeRCOutputs                           1 calls
@@ -5067,131 +5081,125 @@ Target Performance Summary:
         0 ms  BuildLinkTraverse                          1 calls
         0 ms  BuildCompile                               1 calls
         0 ms  _BuildCompileAction                        1 calls
-        0 ms  _ResourceCompile                           1 calls
-        0 ms  AfterResourceCompile                       1 calls
-        0 ms  MakeDirsForResourceCompile                 1 calls
-        0 ms  BeforeResourceCompile                      1 calls
-        0 ms  _ALink                                     1 calls
-        0 ms  _ClCompile                                 1 calls
-        0 ms  _Manifest                                  1 calls
         0 ms  ResolvedXDCMake                            1 calls
+        0 ms  _ResourceCompile                           1 calls
+        0 ms  ComputeCLCompileGeneratedXDCFiles          1 calls
+        0 ms  _XdcMake                                   1 calls
+        0 ms  _CleanGetCurrentAndPriorFileWrites         1 calls
         0 ms  AfterBuild                                 1 calls
         0 ms  BuildLink                                  1 calls
         0 ms  _BuildLinkAction                           1 calls
         0 ms  PostBuildEvent                             1 calls
         0 ms  PrepareForRun                              1 calls
-        0 ms  CopyFilesToOutputDirectory                 1 calls
+        0 ms  _CheckForCompileOutputs                    1 calls
         0 ms  _CopySourceItemsToOutputDirectory          1 calls
+        0 ms  _GetCopyToOutputDirectoryItemsFromThisProject   1 calls
         0 ms  _GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences   1 calls
+        0 ms  GetCopyToOutputDirectoryItems              1 calls
         0 ms  GetCopyToOutputDirectoryXamlAppDefs        1 calls
         0 ms  _PopulateCommonStateForGetCopyToOutputDirectoryItems   1 calls
         0 ms  _Deploy                                    1 calls
         0 ms  _Appverifier                               1 calls
         0 ms  CreateSatelliteAssemblies                  1 calls
         0 ms  _GenerateSatelliteAssemblyInputs           1 calls
+        0 ms  CreateRecipeFile                           1 calls
         0 ms  ContentFilesProjectOutputGroup             1 calls
         0 ms  MakeDirsForFxc                             1 calls
         0 ms  SatelliteDllsProjectOutputGroup            1 calls
         0 ms  BuiltProjectOutputGroup                    1 calls
         0 ms  _BscMake                                   1 calls
+        0 ms  MakeDirsForBscMake                         1 calls
         0 ms  ComputeCLCompileGeneratedSbrFiles          1 calls
-        0 ms  _XdcMake                                   1 calls
         0 ms  MakeDirsForXdcMake                         1 calls
-        0 ms  ComputeCLCompileGeneratedXDCFiles          1 calls
-        0 ms  RegisterOutput                             1 calls
-        0 ms  AfterClCompile                             1 calls
+        0 ms  AfterResourceCompile                       1 calls
         0 ms  Build                                      1 calls
-        0 ms  SelectClCompile                            1 calls
-        0 ms  _SelectedFiles                             1 calls
+        0 ms  BeforeResourceCompile                      1 calls
         0 ms  PreBuildEvent                              1 calls
         0 ms  BeforeBuildGenerateSources                 1 calls
+        0 ms  BuildGenerateSourcesTraverse               1 calls
         0 ms  ResolveReferences                          1 calls
         0 ms  AfterResolveReferences                     1 calls
         0 ms  ResolveAssemblyReferences                  1 calls
         0 ms  ExpandSDKReferences                        1 calls
         0 ms  ResolveSDKReferences                       1 calls
         0 ms  SetCABuildNativeEnvironmentVariables       1 calls
-        0 ms  SelectCustomBuild                          1 calls
+        0 ms  _CheckWindowsSDKInstalled                  1 calls
+        0 ms  GetResolvedWinMD                           1 calls
+        0 ms  MakeDirsForResourceCompile                 1 calls
         0 ms  SetBuildDefaultEnvironmentVariables        1 calls
         0 ms  GetReferenceAssemblyPaths                  1 calls
         0 ms  GetFrameworkPaths                          1 calls
         0 ms  ResolveProjectReferences                   1 calls
         0 ms  PrepareProjectReferences                   1 calls
+        0 ms  _GetProjectReferenceTargetFrameworkProperties   1 calls
         0 ms  _AddOutputPathToGlobalPropertiesToRemove   1 calls
         0 ms  _SplitProjectReferencesByFileExistence     1 calls
+        0 ms  AssignProjectConfiguration                 1 calls
         0 ms  BeforeResolveReferences                    1 calls
         0 ms  _PrepareForReferenceResolution             1 calls
         0 ms  _PrepareForBuild                           1 calls
         0 ms  AddExternalIncludDirectoriesToPaths        1 calls
-        0 ms  ComputeCustomBuildOutput                   1 calls
-        0 ms  BuildGenerateSourcesTraverse               1 calls
-        0 ms  AfterBuildGenerateSources                  1 calls
+        0 ms  SelectCustomBuild                          1 calls
+        0 ms  _SelectedFiles                             1 calls
         0 ms  BeforeClCompile                            1 calls
+        0 ms  GetReferencedVCProjectsInfo                1 calls
+        0 ms  FindReferenceAssembliesForReferences       1 calls
+        0 ms  ComputeCLInputPDBName                      1 calls
+        0 ms  CustomBuild                                1 calls
         0 ms  BuildCompileTraverse                       1 calls
         0 ms  BuildGenerateSources                       1 calls
-        0 ms  GetReferencedVCProjectsInfo                1 calls
         0 ms  _BuildGenerateSourcesAction                1 calls
+        0 ms  MakeDirsForCl                              1 calls
         0 ms  AfterBuildGenerateSourcesEvent             1 calls
-        0 ms  ComputeCLInputPDBName                      1 calls
+        0 ms  AfterBuildGenerateSources                  1 calls
+        0 ms  SelectClCompile                            1 calls
         0 ms  _Midl                                      1 calls
         0 ms  AfterMidl                                  1 calls
-        0 ms  FindReferenceAssembliesForReferences       1 calls
+        0 ms  AfterClCompile                             1 calls
+        0 ms  _ClCompile                                 1 calls
         0 ms  ComputeMIDLGeneratedCompileInputs          1 calls
-        0 ms  MakeDirsForMidl                            1 calls
         0 ms  _Xsd                                       1 calls
-        0 ms  WarnCompileDuplicatedFilename              1 calls
-        0 ms  _CheckForCompileOutputs                    1 calls
-        1 ms  _CheckWindowsSDKInstalled                  1 calls
-        1 ms  ComputeReferenceCLInput                    1 calls
-        1 ms  MakeDirsForBscMake                         1 calls
-        1 ms  _GetProjectReferenceTargetFrameworkProperties   1 calls
-        1 ms  GetResolvedWinMD                           1 calls
-        1 ms  AssignProjectConfiguration                 1 calls
-        1 ms  MakeDirsForCl                              1 calls
-        1 ms  AssignTargetPaths                          1 calls
-        1 ms  ComputeCLOutputs                           1 calls
-        1 ms  CustomBuild                                1 calls
-        1 ms  CreateRecipeFile                           1 calls
-        1 ms  ComputeLinkImportLibraryOutputsForClean    1 calls
-        1 ms  CopyFileToFolders                          1 calls
-        1 ms  MakeDirsForLink                            1 calls
+        0 ms  CopyFileToFolders                          1 calls
+        0 ms  ComputeReferenceCLInput                    1 calls
+        1 ms  FixupCLCompileOptions                      1 calls
         1 ms  IncrementalClean                           1 calls
-        1 ms  GetCopyToOutputDirectoryItems              1 calls
-        1 ms  _GetCopyToOutputDirectoryItemsFromThisProject   1 calls
-        1 ms  SetTelemetryEnvironmentVariables           1 calls
-        1 ms  _CleanGetCurrentAndPriorFileWrites         1 calls
+        1 ms  ComputeCustomBuildOutput                   1 calls
         1 ms  FinalizeBuildStatus                        1 calls
-        2 ms  FixupCLCompileOptions                      1 calls
-        3 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
-        3 ms  InitializeBuildStatus                      1 calls
-        3 ms  PrepareForBuild                            1 calls
-      165 ms  Link                                       1 calls
-      736 ms  ClCompile                                  1 calls
+        1 ms  SetTelemetryEnvironmentVariables           1 calls
+        1 ms  PrepareForBuild                            1 calls
+        1 ms  DoLinkOutputFilesMatch                     1 calls
+        1 ms  InitializeBuildStatus                      1 calls
+        1 ms  MakeDirsForMidl                            1 calls
+        1 ms  CopyFilesToOutputDirectory                 1 calls
+        1 ms  WarnCompileDuplicatedFilename              1 calls
+        2 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
+      119 ms  Link                                       1 calls
+     2388 ms  ClCompile                                  1 calls
 
 Task Performance Summary:
         0 ms  Message                                    3 calls
-        0 ms  SetEnv                                     9 calls
-        0 ms  MSBuild                                    1 calls
-        0 ms  FindUnderPath                              5 calls
-        0 ms  CheckVCToolsetVersion                      1 calls
         0 ms  ConvertToAbsolutePath                      1 calls
+        0 ms  CallTarget                                 2 calls
         0 ms  GenerateDesktopDeployRecipe                1 calls
-        0 ms  RemoveDuplicates                           2 calls
         0 ms  AssignCulture                              1 calls
         0 ms  AssignTargetPath                           7 calls
-        1 ms  ReadLinesFromFile                          2 calls
-        1 ms  AssignProjectConfiguration                 1 calls
-        1 ms  GetOutOfDateItems                          3 calls
-        1 ms  MakeDir                                   10 calls
-        1 ms  WriteLinesToFile                           1 calls
-        1 ms  CallTarget                                 2 calls
+        0 ms  RemoveDuplicates                           2 calls
+        0 ms  GetOutOfDateItems                          3 calls
+        0 ms  ReadLinesFromFile                          2 calls
+        0 ms  CheckVCToolsetVersion                      1 calls
+        0 ms  MSBuild                                    1 calls
+        0 ms  AssignProjectConfiguration                 1 calls
+        0 ms  Delete                                     2 calls
+        1 ms  FindUnderPath                              5 calls
         1 ms  Touch                                      2 calls
-        1 ms  Delete                                     2 calls
-      164 ms  Link                                       1 calls
-      730 ms  CL                                         1 calls
+        1 ms  SetEnv                                     9 calls
+        1 ms  WriteLinesToFile                           1 calls
+        2 ms  MakeDir                                   10 calls
+      119 ms  Link                                       1 calls
+     2388 ms  CL                                         1 calls
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.94
+Time Elapsed 00:00:02.53
