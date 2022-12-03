@@ -5,27 +5,44 @@
 
 #include "Wrappers.hpp"
 #include "Game.hpp"
-#include "Colors.hpp"
 
-TextureWrapper::TextureWrapper(const char* filePath, SDL_Renderer* renderer)
-	: texture(nullptr, SDL_DestroyTexture)
+TextureWrapper::TextureWrapper(const char* imagePath)
 {
-	std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> tempSurface(IMG_Load(filePath), SDL_FreeSurface);
-	initSurfaceInfo(renderer, std::move(tempSurface));
+	std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> tempSurface(IMG_Load(imagePath), SDL_FreeSurface);
+	initSurfaceInfo(std::move(tempSurface));
 }
 
-TextureWrapper::TextureWrapper(const char* filePath, int fontSize, SDL_Color color, const char symbol, SDL_Renderer* renderer)
-	: texture(nullptr, SDL_DestroyTexture)
+//#pragma optimize("", off)
+TextureWrapper::TextureWrapper(SDL_Color color, const char symbol)
 {
-	std::unique_ptr<TTF_Font, decltype(&TTF_CloseFont)> font(TTF_OpenFont(filePath, fontSize), TTF_CloseFont);
+	// init temp tempFont with auto-cleanup
+	//std::unique_ptr<TTF_Font, decltype(&TTF_CloseFont)> tempFont(TTF_OpenFont(fontPath, fontSize), TTF_CloseFont);
+	// init temp surface with auto-cleanup
+	std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> tempSurface(TTF_RenderText_Solid(Game::defaultFont, &symbol, color), SDL_FreeSurface);
 
-	std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> tempSurface(TTF_RenderText_Solid(font.get(), &symbol, color), SDL_FreeSurface);
-	initSurfaceInfo(renderer, std::move(tempSurface));
+	initSurfaceInfo(std::move(tempSurface));
 }
 
-void TextureWrapper::initSurfaceInfo(SDL_Renderer* renderer, std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> surface)
+// turn off optimization for this function
+void TextureWrapper::initSurfaceInfo(std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> surface)
 {
-	texture.reset(SDL_CreateTextureFromSurface(renderer, surface.get()));
+	texture.reset(SDL_CreateTextureFromSurface(Game::renderer, surface.get()));
 	width = surface->w;
 	height = surface->h;
+}
+//#pragma optimize("", on)
+
+SDL_Texture* TextureWrapper::getTextureRaw() const
+{
+	return texture.get();
+}
+
+const int TextureWrapper::getWidth() const
+{
+	return width;
+}
+
+const int TextureWrapper::getHeight() const
+{
+	return height;
 }

@@ -1,10 +1,10 @@
-﻿#ifndef ELEMENTS_H
-#define ELEMENTS_H
+﻿#pragma once
 
 #include "SDL.h"
 
 class TextureWrapper;
 
+#include "Height.hpp"
 #include "Wrappers.hpp"
 
 //Constants 
@@ -17,42 +17,55 @@ namespace SymbolSets {
 	const char Playable[2] = {'P', 'E'};
 }
 
+// TODO: Assign a unique ID to each GameElement to allow for proper searching and identification
+// TODO: Merge GameEleent and TextureElement - graphics are text-based anyway
 class GameElement {
-protected:
-	GameElement(SDL_Renderer* ren, int x, int y, std::unique_ptr<TextureWrapper> texture);
+public:
+	virtual void update();
+	virtual void render();
 
-	virtual void update() = 0;
-	virtual void render() = 0;
+	const int getX() const;
+	const int getY() const;
+	const bool isPlayable() const;
+	const Height getHeight() const;
+	char getSymbol();
+
+	void setXY(int x, int y);
+
+protected:
+	GameElement(int x, int y, bool playable, Height height, char symbol, std::unique_ptr<TextureWrapper> texture);
 
 	int x;
 	int y;
+	bool playable;
+	Height height;
+	char symbol;
 
 	std::unique_ptr<TextureWrapper> texture;
-	SDL_Renderer* renderer;
+	
 	// SDL_Rect specifying dimensions of the image
 	SDL_Rect srcRect;
 	// SDL_Rect specifying location + dimensions of rendering
 	SDL_Rect dstRect;
 };
 
-class ImageElement : protected GameElement{
+class ImageElement : public GameElement{
 protected:
-	ImageElement(const char* texturePath, SDL_Renderer* ren, int x, int y);
+	ImageElement(const char* texturePath, int x, int y);
 };
 
-class TextElement : protected GameElement {
+class TextElement : public GameElement {
 protected:
-	TextElement(char symbol, const char* fontPath, int fontSize, SDL_Renderer* ren, int x, int y);
-
-private:
-	char symbol;
+	TextElement(int x, int y, bool playable, Height height, char symbol);
 };
 
 class Player : public TextElement {
 public:
-	Player(const char symbol, SDL_Renderer* ren, int x, int y);
+	Player(int x, int y);
 	void update();
-	void render();
 };
 
-#endif
+class Tile : public TextElement {
+public:
+	Tile(int x, int y);
+};

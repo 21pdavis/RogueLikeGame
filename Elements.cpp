@@ -4,36 +4,77 @@
 
 #include "Elements.hpp"
 #include "Colors.hpp"
+#include "Game.hpp"
 #include "Wrappers.hpp"
 
 // GameElement implementation
-GameElement::GameElement(SDL_Renderer* ren, int x, int y, std::unique_ptr<TextureWrapper> texture)
-	: renderer(ren), x(x), y(y)
+GameElement::GameElement(int x, int y, bool playable, Height height, char symbol, std::unique_ptr<TextureWrapper> texture)
+	: x(x), y(y), playable(playable), height(height), symbol(symbol) 
 {
-	srcRect = { 0, 0, texture->getWidth(), texture->getHeight() };
-	dstRect = { 0, 0, texture->getWidth(), texture->getHeight() };
+	this->srcRect = {0, 0, texture->getWidth(), texture->getHeight()};
+	this->dstRect = {0, 0, texture->getWidth(), texture->getHeight()};
 	this->texture = std::move(texture);
 }
 
+void GameElement::update()
+{
+	dstRect.x = texture->getWidth() * x;
+	dstRect.y = texture->getHeight() * y;
+}
+
+void GameElement::render()
+{
+	SDL_RenderCopy(Game::renderer, texture->getTextureRaw(), &srcRect, &dstRect);
+}
+
+const int GameElement::getX() const
+{
+	return x;
+}
+
+const int GameElement::getY() const
+{
+	return y;
+}
+
+const bool GameElement::isPlayable() const
+{
+	return playable;
+}
+
+const Height GameElement::getHeight() const
+{
+	return height;
+}
+
+char GameElement::getSymbol()
+{
+	return symbol;
+}
+
+void GameElement::setXY(int x, int y)
+{
+	this->x = x;
+	this->y = y;
+}
+
 // ImageElement implementation
-ImageElement::ImageElement(const char* texturePath, SDL_Renderer* ren, int x, int y)
-	: GameElement(ren, x, y, std::make_unique<TextureWrapper>(texturePath, ren)) {}
+//ImageElement::ImageElement(const char* texturePath, int x, int y)
+//	: GameElement(x, y, std::make_unique<TextureWrapper>(texturePath)) {}
 
 // TextElement Implementation
-TextElement::TextElement(char symbol, const char* fontPath, int fontSize, SDL_Renderer* ren, int x, int y)
-	: GameElement(ren, x, y, std::make_unique<TextureWrapper>(fontPath, fontSize, Colors::white, symbol, ren)), symbol(symbol) {}
+TextElement::TextElement(int x, int y, bool playable, Height height, char symbol)
+	: GameElement(x, y, playable, height, symbol, std::make_unique<TextureWrapper>(Colors::white, symbol)) {}
 
 // Player Implementation
-Player::Player(const char symbol, SDL_Renderer* renderer, int x, int y)
-	: TextElement(symbol, "Fonts/OpenSans-Regular.ttf", 24, renderer, x, y) {}
+Player::Player(const int x, const int y)
+	: TextElement(x, y, true, Height::PLAYER, 'P') {}
 
 void Player::update()
 {
-	dstRect.x += 1;
-	dstRect.y += 1;
+
 }
 
-void Player::render()
-{
-	SDL_RenderCopy(renderer, texture->getTextureRaw(), &srcRect, &dstRect);
-}
+// Tile Implementation
+Tile::Tile(const int x, const int y)
+	: TextElement(x, y, false, Height::FLOOR, '.') {}

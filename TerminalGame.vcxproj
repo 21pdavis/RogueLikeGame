@@ -126,7 +126,11 @@
   <ItemGroup>
     <ClCompile Include="Elements.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="LevelMap.cpp" />
     <ClCompile Include="Wrappers.cpp" />
+    <ClInclude Include="Constants.hpp" />
+    <ClInclude Include="Height.hpp" />
+    <ClInclude Include="LevelMap.hpp" />
     <ClInclude Include="Wrappers.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClCompile Include="GameMain.cpp" />

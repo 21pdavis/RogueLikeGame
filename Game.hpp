@@ -1,15 +1,17 @@
-#ifndef GAME_H
-#define GAME_H
+#pragma once
 
 #include <memory>
 
 #include "SDL.h"
+#include "SDL_ttf.h"
 
 class Player;
+class LevelMap;
 
-#include "Elements.hpp"
+#include "LevelMap.hpp"
 
-class Game {
+class Game
+{
 public:
 	Game();
 	~Game();
@@ -25,14 +27,15 @@ public:
 	void update();
 	void render();
 	void clean();
-	
+
+	static constexpr int fontSize = 24;
+	static SDL_Renderer* renderer;
+	static TTF_Font* defaultFont;
+
 private:
 	bool running = false;
 	int cnt = 0;
 
 	SDL_Window* window;
-	SDL_Renderer* renderer;
-	std::unique_ptr<Player> player;
+	std::unique_ptr<LevelMap> map;
 };
-
-#endif

@@ -5,7 +5,8 @@ int main(int argc, char* argv[])
 	Game game;
 	
 	// TODO: Investigate frame rate discrepancy (nvidia showing 58 fps - should be exactly 60)
-	double frameDelay = 1000.0 / 60.0;
+	const double FPS = 60.0;
+	double frameDelay = 1000.0 / FPS;
 	Uint64 lastFrameTime = 0;
 	while (game.isRunning()) {
 		Uint64 currTime = SDL_GetTicks64();

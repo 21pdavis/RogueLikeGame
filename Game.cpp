@@ -4,12 +4,21 @@
 
 #include "Game.hpp"
 #include "Colors.hpp"
+#include "Constants.hpp"
 
-Game::Game() {
+SDL_Renderer* Game::renderer = nullptr;
+TTF_Font* Game::defaultFont = nullptr;
+
+Game::Game()
+{
 	init("My Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1280, 720, false);
+
+	// non-sdl initialization
+	map = std::make_unique<LevelMap>();
 }
 
-Game::~Game() {
+Game::~Game()
+{
 	clean();
 }
 
@@ -25,35 +34,53 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 		std::cout << "Subsystems initialized..." << std::endl;
 
 		window = SDL_CreateWindow(title, xpos, ypos, width, height, fullScreen ? SDL_WINDOW_FULLSCREEN : SDL_WINDOW_RESIZABLE);
-		if (window) {
+		if (window)
+		{
 			std::cout << "Window initialized..." << std::endl;
 		}
-		else {
+		else
+		{
 			std::cout << "Error initializing main window. Exiting..." << std::endl;
 			return;
 		}
 
 		// Default is hardware accelerated, but specifying it here for clarity
 		renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-		if (renderer) {
+		if (renderer)
+		{
 			SDL_SetRenderDrawColor(renderer, Colors::black.r, Colors::black.g, Colors::black.b, Colors::black.a);
 			std::cout << "Renderer initialized..." << std::endl;
 		}
-		else { 
+		else
+		{ 
 			std::cout << "Error initializing renderer. Exiting..." << std::endl;
 			return;
 		}
 
 		// TTF_Init() returns 0 on success for some reason
-		if (TTF_Init() == 0) {
-			std::cout << "TrueType fonts library (SDL_ttf) initialized..." << std::endl;
+		if (TTF_Init() == 0)
+		{
+			std::cout << "TrueType fonts library and default font (SDL_ttf) initialized..." << std::endl;
 		}
-		else {
+		else
+		{
 			std::cout << "Error with message '" << TTF_GetError() << "' while initializing TrueType fonts library(SDL_ttf)" << std::endl;
 			return;
 		}
+
+		Game::defaultFont = TTF_OpenFont("Fonts\\OpenSans-Regular.ttf", Game::fontSize);
+		if (defaultFont) {
+			std::cout << "Default font initialized..." << std::endl;
+		}
+		else
+		{
+			std::cout << "Error with message '" << TTF_GetError() << "' while initializing default font" << std::endl;
+			return;
+		}
 		
-		player = std::make_unique<Player>('P', renderer, 0, 0);
+		//map = std::make_unique<LevelMap>();
+		std::cout << "Map Initialized..." << std::endl;
+
 		std::cout << "Game Elements initialized..." << std::endl;
 
 		std::cout << "Initialization finished. Running game..." << std::endl;
@@ -72,10 +99,28 @@ void Game::handleEvents()
 				break;
 
 			case SDL_KEYDOWN: {
-				const Uint8* state = SDL_GetKeyboardState(nullptr);
-				if (state[SDL_SCANCODE_ESCAPE]) {
+				auto state = SDL_GetKeyboardState(nullptr);
+				if (state[SDL_SCANCODE_UP])
+				{
+					map->movePlayable(Directions::UP);
+				}
+				else if (state[SDL_SCANCODE_DOWN])
+				{
+					map->movePlayable(Directions::DOWN);
+				}
+				else if (state[SDL_SCANCODE_LEFT])
+				{
+					map->movePlayable(Directions::LEFT);
+				}
+				else if (state[SDL_SCANCODE_RIGHT])
+				{
+					map->movePlayable(Directions::RIGHT);
+				}
+				else if (state[SDL_SCANCODE_ESCAPE])
+				{
 					running = false;
-				} 
+				}
+
 			}
 
 			default:
@@ -86,7 +131,7 @@ void Game::handleEvents()
 
 void Game::update()
 {
-	player->update();
+	map->update();
 }
 
 void Game::render()
@@ -94,7 +139,7 @@ void Game::render()
 	// clear buffer and screen back to default color specified in SDL_SetRenderDrawColor
 	SDL_RenderClear(renderer);
 
-	player->render();
+	map->render();
 
 	// render to the screen
 	SDL_RenderPresent(renderer);
@@ -102,6 +147,7 @@ void Game::render()
 
 void Game::clean()
 {
+	TTF_CloseFont(Game::defaultFont);
 	TTF_Quit();
 
 	SDL_DestroyRenderer(renderer);

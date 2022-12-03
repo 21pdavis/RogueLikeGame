@@ -1,5 +1,4 @@
-#ifndef COLORS_H
-#define COLORS_H
+#pragma once
 
 #include "SDL.h"
 
@@ -10,5 +9,3 @@ namespace Colors {
 	constexpr SDL_Color white{ 255, 255, 255, 255 };
 	constexpr SDL_Color black{ 0, 0, 0, 255 };
 }
-
-#endif
