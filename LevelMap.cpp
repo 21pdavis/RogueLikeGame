@@ -46,6 +46,16 @@ std::unique_ptr<GameElement> Pixel::removeBySymbol(const char symbol)
 	return nullptr;
 }
 
+int Pixel::getX() const
+{
+	return x;
+}
+
+int Pixel::getY() const
+{
+	return y;
+}
+
 // Private Interface
 void Pixel::insertByHeight(std::unique_ptr<GameElement> elemPtr)
 {
@@ -76,20 +86,33 @@ void Pixel::insertByHeight(std::unique_ptr<GameElement> elemPtr)
 LevelMap::LevelMap()
 	: playableX(0), playableY(0)
 {
-	for (int i = 0; i < MAP_HEIGHT; ++i) {
-		for (int j = 0; j < MAP_WIDTH; ++j) {
+	for (int i = 0; i < MAP_HEIGHT; ++i)
+	{
+		for (int j = 0; j < MAP_WIDTH; ++j)
+		{
 			map[i][j] = std::make_unique<Pixel>(j, i);
 		}
 	}
 
+	// add a tile on every pixel
+	for (const auto& row : map)
+	{
+		for (const auto& pixel : row)
+		{
+			pixel->addElem(std::make_unique<Tile>(pixel->getX(), pixel->getY()));
+		}
+	}
+
 	// add player at (0, 0)
-	map[playableX][playableY]->addElem(std::make_unique<Player>(0, 0));
+	map[playableX][playableY]->addElem(std::make_unique<Player>(playableX, playableY));
 }
 
 void LevelMap::update()
 {
-	for (auto& row : map) {
-		for (auto& pixel : row) {
+	for (const auto& row : map)
+	{
+		for (const auto& pixel : row)
+		{
 			pixel->update();
 		}
 	}
@@ -100,8 +123,10 @@ void LevelMap::update()
 */
 void LevelMap::render()
 {
-	for (auto& row : map) {
-		for (auto& pixel : row) {
+	for (auto& row : map)
+	{
+		for (auto& pixel : row)
+		{
 			pixel->render();
 		}
 	}
@@ -124,7 +149,7 @@ bool LevelMap::moveBySymbol(int x, int y, char symbol, std::pair<int, int> direc
 
 bool LevelMap::movePlayable(const std::pair<int, int>& direction)
 {
-	bool moved = moveBySymbol(playableX, playableY, 'P', direction);
+	bool moved = moveBySymbol(playableX, playableY, Symbols::PLAYER, direction);
 
 	if (moved)
 	{
@@ -134,5 +159,3 @@ bool LevelMap::movePlayable(const std::pair<int, int>& direction)
 
 	return moved;
 }
-
-

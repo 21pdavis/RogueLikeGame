@@ -30,10 +30,12 @@ const bool Game::isRunning() const
 void Game::init(const char* title, int xpos, int ypos, int width, int height, bool fullScreen)
 {
 	// check return code of SDL_Init() to get 
-	if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
+	if (SDL_Init(SDL_INIT_EVERYTHING) == 0)
+	{
 		std::cout << "Subsystems initialized..." << std::endl;
 
-		window = SDL_CreateWindow(title, xpos, ypos, width, height, fullScreen ? SDL_WINDOW_FULLSCREEN : SDL_WINDOW_RESIZABLE);
+		window = SDL_CreateWindow(title, xpos, ypos, width, height,
+		                          fullScreen ? SDL_WINDOW_FULLSCREEN : SDL_WINDOW_RESIZABLE);
 		if (window)
 		{
 			std::cout << "Window initialized..." << std::endl;
@@ -52,7 +54,7 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 			std::cout << "Renderer initialized..." << std::endl;
 		}
 		else
-		{ 
+		{
 			std::cout << "Error initializing renderer. Exiting..." << std::endl;
 			return;
 		}
@@ -64,12 +66,15 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 		}
 		else
 		{
-			std::cout << "Error with message '" << TTF_GetError() << "' while initializing TrueType fonts library(SDL_ttf)" << std::endl;
+			std::cout << "Error with message '" << TTF_GetError() <<
+				"' while initializing TrueType fonts library(SDL_ttf)" << std::endl;
 			return;
 		}
 
-		Game::defaultFont = TTF_OpenFont("Fonts\\OpenSans-Regular.ttf", Game::fontSize);
-		if (defaultFont) {
+		//Game::defaultFont = TTF_OpenFont("Fonts\\OpenSans-Regular.ttf", Game::fontSize);
+		Game::defaultFont = TTF_OpenFont("Fonts\\Cascadia.ttf", Game::fontSize);
+		if (defaultFont)
+		{
 			std::cout << "Default font initialized..." << std::endl;
 		}
 		else
@@ -77,7 +82,7 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 			std::cout << "Error with message '" << TTF_GetError() << "' while initializing default font" << std::endl;
 			return;
 		}
-		
+
 		//map = std::make_unique<LevelMap>();
 		std::cout << "Map Initialized..." << std::endl;
 
@@ -86,6 +91,8 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 		std::cout << "Initialization finished. Running game..." << std::endl;
 		running = true;
 	}
+
+
 }
 
 void Game::handleEvents()

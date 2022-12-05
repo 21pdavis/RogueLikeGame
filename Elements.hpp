@@ -7,16 +7,6 @@ class TextureWrapper;
 #include "Height.hpp"
 #include "Wrappers.hpp"
 
-//Constants 
-enum class Symbols : char {
-	Player = 'P',
-	Editor = 'E'
-};
-
-namespace SymbolSets {
-	const char Playable[2] = {'P', 'E'};
-}
-
 // TODO: Assign a unique ID to each GameElement to allow for proper searching and identification
 // TODO: Merge GameEleent and TextureElement - graphics are text-based anyway
 class GameElement {

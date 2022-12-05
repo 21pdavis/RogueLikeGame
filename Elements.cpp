@@ -6,11 +6,13 @@
 #include "Colors.hpp"
 #include "Game.hpp"
 #include "Wrappers.hpp"
+#include "Constants.hpp"
 
 // GameElement implementation
 GameElement::GameElement(int x, int y, bool playable, Height height, char symbol, std::unique_ptr<TextureWrapper> texture)
 	: x(x), y(y), playable(playable), height(height), symbol(symbol) 
 {
+	// P is 14 and 33, let's try another letter
 	this->srcRect = {0, 0, texture->getWidth(), texture->getHeight()};
 	this->dstRect = {0, 0, texture->getWidth(), texture->getHeight()};
 	this->texture = std::move(texture);
@@ -70,7 +72,7 @@ TextElement::TextElement(int x, int y, bool playable, Height height, char symbol
 
 // Player Implementation
 Player::Player(const int x, const int y)
-	: TextElement(x, y, true, Height::PLAYER, 'P') {}
+	: TextElement(x, y, true, Height::PLAYER, Symbols::PLAYER) {}
 
 void Player::update()
 {
@@ -79,4 +81,4 @@ void Player::update()
 
 // Tile Implementation
 Tile::Tile(const int x, const int y)
-	: TextElement(x, y, false, Height::FLOOR, '.') {}
+	: TextElement(x, y, false, Height::FLOOR, Symbols::TILE) {}
