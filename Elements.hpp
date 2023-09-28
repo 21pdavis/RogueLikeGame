@@ -9,7 +9,8 @@ class TextureWrapper;
 
 // TODO: Assign a unique ID to each GameElement to allow for proper searching and identification
 // TODO: Merge GameEleent and TextureElement - graphics are text-based anyway
-class GameElement {
+class GameElement
+{
 public:
 	virtual void update();
 	virtual void render();
@@ -39,23 +40,27 @@ protected:
 	SDL_Rect dstRect;
 };
 
-class ImageElement : public GameElement{
+class ImageElement : public GameElement
+{
 protected:
 	ImageElement(const char* texturePath, int x, int y);
 };
 
-class TextElement : public GameElement {
+class TextElement : public GameElement
+{
 protected:
 	TextElement(int x, int y, bool playable, Height height, char symbol);
 };
 
-class Player : public TextElement {
+class Player : public TextElement
+{
 public:
 	Player(int x, int y);
 	void update();
 };
 
-class Tile : public TextElement {
+class Tile : public TextElement
+{
 public:
 	Tile(int x, int y);
 };

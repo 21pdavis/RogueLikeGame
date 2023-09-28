@@ -14,14 +14,16 @@ Pixel::Pixel(int x, int y, std::unique_ptr<GameElement> startingElem)
 
 void Pixel::update()
 {
-	for (auto& elem : stack) {
+	for (auto& elem : stack)
+	{
 		elem->update();
 	}
 }
 
 void Pixel::render()
 {
-	if (stack.size() > 0) {
+	if (stack.size() > 0)
+	{
 		stack.back()->render();
 	}
 }
@@ -36,7 +38,8 @@ std::unique_ptr<GameElement> Pixel::removeBySymbol(const char symbol)
 	std::unique_ptr<GameElement> ret;
 	for (auto& elem : stack)
 	{
-		if (elem->getSymbol() == symbol) {
+		if (elem->getSymbol() == symbol)
+		{
 			ret = std::move(stack.back());
 			stack.pop_back();
 			return std::move(ret);

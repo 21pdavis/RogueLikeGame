@@ -9,7 +9,8 @@ class GameElement;
 #include "Constants.hpp"
 
 // TODO: Separate Pixel out into a separate file
-class Pixel {
+class Pixel
+{
 public:
 	Pixel(int x, int y);
 	Pixel(int x, int y, std::unique_ptr<GameElement> startingElem);

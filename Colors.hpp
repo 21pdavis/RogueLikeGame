@@ -2,7 +2,8 @@
 
 #include "SDL.h"
 
-namespace Colors {
+namespace Colors
+{
 	constexpr SDL_Color red {255, 0, 0, 255};
 	constexpr SDL_Color green{ 0, 255, 0, 255 };
 	constexpr SDL_Color blue{ 0, 0, 255, 255 };

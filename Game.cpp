@@ -94,8 +94,6 @@ void Game::init(const char* title, int xpos, int ypos, bool fullScreen)
 		std::cout << "Initialization finished. Running game..." << std::endl;
 		running = true;
 	}
-
-
 }
 
 void Game::handleEvents()

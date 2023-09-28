@@ -4,7 +4,8 @@
 
 #include "SDL.h"
 
-class TextureWrapper {
+class TextureWrapper
+{
 public:
 	TextureWrapper(const char* imagePath);
 	TextureWrapper(SDL_Color color, const char symbol);
