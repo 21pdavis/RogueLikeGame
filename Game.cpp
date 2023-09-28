@@ -11,7 +11,7 @@ TTF_Font* Game::defaultFont = nullptr;
 
 Game::Game()
 {
-	init("My Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1280, 720, false);
+	init("My Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, false);
 
 	// non-sdl initialization
 	map = std::make_unique<LevelMap>();
@@ -27,14 +27,17 @@ const bool Game::isRunning() const
 	return running;
 }
 
-void Game::init(const char* title, int xpos, int ypos, int width, int height, bool fullScreen)
+void Game::init(const char* title, int xpos, int ypos, bool fullScreen)
 {
 	// check return code of SDL_Init() to get 
 	if (SDL_Init(SDL_INIT_EVERYTHING) == 0)
 	{
+		SDL_DisplayMode displayMode;
+		SDL_GetCurrentDisplayMode(0, &displayMode);
+
 		std::cout << "Subsystems initialized..." << std::endl;
 
-		window = SDL_CreateWindow(title, xpos, ypos, width, height,
+		window = SDL_CreateWindow(title, xpos, ypos, fullScreen ? displayMode.w : 1280, fullScreen ? displayMode.h : 720,
 		                          fullScreen ? SDL_WINDOW_FULLSCREEN : SDL_WINDOW_RESIZABLE);
 		if (window)
 		{

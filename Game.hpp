@@ -21,7 +21,7 @@ public:
 	// dynamic deleter functions for unique pointers
 	struct SDL_Deleter;
 
-	void init(const char* title, int xpos, int ypos, int width, int height, bool fullScreen);
+	void init(const char* title, int xpos, int ypos, bool fullScreen);
 
 	void handleEvents();
 	void update();
